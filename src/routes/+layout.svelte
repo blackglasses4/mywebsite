@@ -2,7 +2,6 @@
 	import '$lib/styles/style.css';
 	import { page } from '$app/stores';
 </script>
-
 <div class="container">
 	<header>
 		<a id="left-header" href="/">adrianna pawłowska</a>

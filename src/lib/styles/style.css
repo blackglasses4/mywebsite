@@ -7,7 +7,7 @@ body {
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 50%;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(2.JPG);
     background-position: bottom;
     background-size: cover;
@@ -23,7 +23,7 @@ li, a {
 }
 
 a.active {
-    color: red;
+    color: rgb(57, 177, 103);
 }
 
 header {
@@ -31,7 +31,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 20px 5%;
-    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid white;
 }
 
 #left-header {
@@ -60,39 +60,82 @@ header {
 
 .main-introduce {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
     display: block;
+    align-items: center;
     position: relative;
-    padding: 50px 0px 0px 50px;
-    margin-top: 0px;
-    margin-bottom: x;
-    background-color: rgb(85, 90, 90, 0.1);
+    margin-top: 50px;
+}
+
+h1 {
+    margin: 67px 67px 0px 67px;
 }
 
 h2 {
     font-weight: 800;
-    font-size: 60px;
+    font-size: 120px;
     color: rgb(29, 29, 92);
     margin-bottom: 10px;
     margin-top: 0px;
     font-style: italic;
 }
 
-
-h2::selection {
-    background-color: #009744;
+h3 {
+    font-size: 40px;
+    margin: 20px 0px 20px 0px;
 }
 
-h4::selection {
+.a-contact {
+    font-size: 40px;
+    color: #009744;
+    transition: all 0.3s ease;
+}
+
+.a-contact:hover {
     background-color: #009744;
+    color: white;
 }
 
 h4 {
-    font-weight: 600;
+    font-weight: 200;
     font-size: 20px;
     color: rgb(240, 242, 247);
     margin-top: 0px;
     margin-bottom: 10px;
+}
+
+h2::selection,
+h3::selection, 
+h4::selection,
+h1::selection, 
+p::selection,
+a::selection,
+footer::selection {
+    background-color: #c4e7d4;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
+}
+
+.bx-icon {
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.bxl-instagram:hover,
+.bxl-facebook-circle:hover,
+.bxl-github:hover,
+.bxl-linkedin-square:hover
+ {
+    transition: all 0.3s ease;
+    transform: scale(1.2);
 }
 
 button {
@@ -105,9 +148,10 @@ button {
     padding: 0;
     color: white;
     margin-top: 20px;
+    text-transform: capitalize;
 }
 
-button span {
+button a {
     display: inline-block;
     padding: 10px 25px;
     font-size: 17px;
@@ -123,8 +167,40 @@ button:hover {
     color: white;
 }
 
+.aboutme,
+.contact {
+    background-color: rgb(255 255 255 / 0.2);
+    width: 40%;
+    height: inherit;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.aboutme h1,
+.contact h1 {
+    font-size: 100px;
+
+    color: #ffffff;
+}
+
+.aboutme p {
+    font-size: 1.4rem;
+    margin: 0px 40px 20px 40px;
+}
+
+
 footer {
-    color: #f1e5e5;
+    font-size: 1.2rem;
+    color: #312e2e;
     text-transform: capitalize;
     font-weight: 100;
     display: flex;
@@ -132,4 +208,5 @@ footer {
     align-items: center;
     position: relative;
     bottom: 0px;
+    margin-top: 20px;
 }
