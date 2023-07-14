@@ -20,9 +20,9 @@
     </p>
     <p>
         Uważam się za osobę ambitną, kreatywną oraz zdeterminowaną, która w razie jakichkolwiek niepowodzeń,
-        zawsze stara się szybko rozwiązać je. Modelowanie, wizualizacja 3D oraz Web developer to nie tylko
-        dla mnie praca, lecz prawdziwa pasja. Z niech czerpię radość oraz podczas prac pozwalam się zatracić
-        bujnej wyobraźni. Wierzę, że z biegiem czasu, kształcąc się i łącząc estetykę, prostotę oraz funkcjonalność
+        zawsze stara się szybko rozwiązać je. Modelowanie 3D oraz tworzenie stron internetowych nie jest tylko
+        zwykłą pracą dla mnie, lecz prawdziwą pasją. Z nich czerpię radość oraz pozwalam się zatracić
+        wyobraźni. Wierzę, że z biegiem czasu, kształcąc się i łącząc estetykę, prostotę oraz funkcjonalność
         w mych pracach będę w stanie stworzyć coś niezwykłego i wyróżniającego się sposród innych użytkowników.
     </p>
     <br>
