@@ -22,10 +22,13 @@
             <button><a href="/about">Więcej o mnie</a></button>
             <hr>
             <h3>przykładowe projekty</h3>
+            
             <div class="fewproject">
+                <button><a href="/about">Więcej prac</a></button>
+            </div>
+            <div class="button">
                 
             </div>
-            <button><a href="/about">Więcej prac</a></button>
         </div>
     </section>
 </div>

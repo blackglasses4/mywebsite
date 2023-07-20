@@ -1,3 +1,12 @@
+:root {
+    --bd-dark: #1f242d;
+    --second-bd-dark: #323946;
+    --darkgreen:#143D22;
+    --limegreen:#00E83A;
+    --darkred: #480509;
+    --lightpink: #B0A195;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -15,7 +24,7 @@ body {
 }
 
 .container {
-    background-image: linear-gradient(rgba(0, 163, 41, 0.5), rgba(98, 0, 255, 0.1));
+    background-color: var(--bd-dark);
     background-position: bottom;
     background-size: cover;
     flex-grow: 1;
@@ -24,14 +33,14 @@ body {
 li, a {
     font-weight: 900;
     font-size: 15px;
-    color: white;
+    color: #fff;
     text-decoration: none;
     list-style-type: none;
     text-transform: capitalize;
 }
 
 a.active {
-    color: rgb(57, 177, 103);
+    color: var(--green);
 }
 
 header {
@@ -39,14 +48,14 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 20px 5%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
 }
 
 #left-header {
     position: relative;
     height: auto;
     left: 0;
-    color: white;
+    color: #fff;
     font-size: 20px;
     margin-right: auto;
 }
@@ -63,37 +72,48 @@ header {
 
 .right-header li a:hover {
     transition: all 0.3s ease 0s;
-    color: rgb(164, 164, 238);
+    color: var(--limegreen);
 }
 
 .circle {
-    background-color: rgb(255 255 255 / 0.2);
-    z-index: 0;
-    width: 800px;
-    height: 800px;
+    background-color: rgba(50, 57, 70, 0.1);
+    z-index: 2;
+    box-shadow: 0 0 20px 3px #000000;
     border-radius: 50%;
     position: absolute;
-   
 }
 
 .one {
+    width: 800px;
+    height: 800px;
     top: -200px;
     left: -350px;
 }
 
 .two {
+    width: 800px;
+    height: 800px;
     right: -400px;
     bottom: -600px;
 }
 
+.three {
+    width: 450px;
+    height: 450px;
+    right: 100px;
+    bottom: 70px;
+}
+
 h1 {
     margin: 67px 67px 0px 67px;
+    color: var(--bd-dark);
+    font-size: 100px;
 }
 
 h2 {
     font-weight: 800;
     font-size: 120px;
-    color: rgb(29, 29, 92);
+    color: var(--limegreen);
     margin-bottom: 10px;
     margin-top: 0px;
     font-style: italic;
@@ -102,23 +122,25 @@ h2 {
 h3 {
     font-size: 40px;
     margin: 20px 0px 20px 0px;
+    color: var(--limegreen);
+    text-transform: capitalize;
 }
 
 .a-contact {
     font-size: 40px;
-    color: #009744;
+    color: var(--limegreen);
     transition: all 0.3s ease;
 }
 
 .a-contact:hover {
-    background-color: #009744;
-    color: white;
+    background-color: var(--darkred);
+    color: var(--limegreen);
 }
 
 h4 {
     font-weight: 500;
     font-size: 30px;
-    color: rgb(240, 242, 247);
+    color: #fff;
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -130,12 +152,17 @@ hr {
 h2::selection,
 h3::selection, 
 h4::selection,
-h1::selection, 
-p::selection,
 a::selection,
 footer::selection,
 q::selection {
-    background-color: #c4e7d4;
+    background-color: var(--limegreen);
+    color: var(--bd-dark);
+}
+
+h1::selection,
+p::selection {
+    background-color: var(--bd-dark);
+    color: var(--limegreen);
 }
 
 .email {
@@ -144,11 +171,46 @@ q::selection {
     margin: 0 10% 0 10%;
 }
 
-.bx-icon {
+.bx-icon a{
     font-size: 30px;
     margin-top: 30px;
     letter-spacing: 0.8rem;
     transition: all 0.3s ease;
+    color: #000000;
+    z-index: 0;
+}
+
+.icon-aboutme i{
+    display: flex;
+    position: absolute;
+    letter-spacing: 0.8rem;
+    color: var(--second-bd-dark);
+    z-index: 0;
+}
+
+.bxl-javascript {
+    top: 80%;
+    right: 50%;
+    transform: rotate(30deg);
+    font-size: 350px;
+}
+
+.bxl-html5 {
+    top: 125%;
+    left: 1%;
+    transform: rotate(-30deg);
+    font-size: 350px;
+}
+
+.bxl-blender {
+    top: 125%;
+    left: 1%;
+    transform: rotate(-30deg);
+    font-size: 350px;
+}
+
+.bxl-css3 {
+    right: 20%
 }
 
 .bxs-cube {
@@ -156,7 +218,7 @@ q::selection {
 }
 
 .bx-chevron-down {
-    color: white;
+    color: #fff;
     font-size: 5rem;
     display: flex;
     position: absolute;
@@ -166,7 +228,7 @@ q::selection {
 
 .bx-chevron-down:hover {
     transition: all 0.3s ease;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .textabout {
@@ -180,12 +242,12 @@ q::selection {
     font-weight: 800;
     position: absolute;
     margin-top: -100px;
-    color: #200079;
+    color: var(--limegreen);
 }
 
 blockquote {
     font-size: 25px;
-    color: #017729;
+    color: #fff;
 }
 
 .bx-chevron-left,
@@ -212,11 +274,11 @@ button {
     border: none;
     border-radius: 20px;
     transition: all 1.5s ease;
-    background: linear-gradient(10deg, #200079, #009744);
+    background: linear-gradient(10deg, var(--darkred), var(--limegreen));
     font-weight: bold;
     letter-spacing: 0.05rem;
     padding: 0;
-    color: white;
+    color: #fff;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -233,14 +295,14 @@ button a {
 button:hover {
     transition: 0.1s ease-in-out;
     transform: scale(1.1);
-    color: white;
+    color: #fff;
 }
 
 .fewproject {
     width: 80%;
     height: 60vh;
     margin: 0 auto 0 auto;
-    background-color: rgb(255 255 255 / 0.4);
+    background-color: rgba(0, 232, 58, 0.7);
     border-radius: 20px;
 }
 
@@ -255,14 +317,43 @@ button:hover {
     margin-top: 50px;
     z-index: 1;
     flex-grow: 1;
-    z-index: 1;
+    z-index: 3;
 }
 
 .aboutme,
 .contact {
-    background-color: rgb(255 255 255 / 0.2);
-    width: 40%;
+    background-color: var(--limegreen);
     height: inherit;
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px 1px #000;
+}
+
+.left {
+    display: block;
+    position: relative;
+    right: 20%;
+}
+
+.right {
+    display: block;
+    position: relative;
+    left: 20%;
+}
+
+.aboutme {
+    width: 50%;
+    justify-content: center;
+    z-index: 1;
+}
+
+.aboutme p {
+    padding: 30px 10px 30px 10px;
+}
+
+.contact {
+    width: 40%;
     text-align: center;
     justify-content: center;
     display: block;
@@ -272,24 +363,18 @@ button:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    border-radius: 20px;
-}
-
-.aboutme h1,
-.contact h1 {
-    font-size: 100px;
-    color: #ffffff;
 }
 
 .aboutme p {
     font-size: 1.4rem;
+    font-weight: 400;
+    color: #000000;
     margin: 0px 40px 20px 40px;
 }
 
 footer {
     font-size: 1.2rem;
-    color: #312e2e;
+    color: #ffffff;
     text-transform: capitalize;
     font-weight: 100;
     display: flex;
@@ -299,4 +384,5 @@ footer {
     margin-top: 250px;
     bottom: 0px;
     flex-shrink: 0;
+    border-top: 1px solid #fff;
 }
