@@ -122,18 +122,18 @@ h2 {
 h3 {
     font-size: 40px;
     margin: 20px 0px 20px 0px;
-    color: var(--limegreen);
+    color: var(--bd-dark);
     text-transform: capitalize;
 }
 
 .a-contact {
     font-size: 40px;
-    color: var(--limegreen);
+    color: var(--bd-dark);
     transition: all 0.3s ease;
 }
 
 .a-contact:hover {
-    background-color: var(--darkred);
+    background-color: var(--bd-dark);
     color: var(--limegreen);
 }
 
@@ -176,11 +176,11 @@ p::selection {
     margin-top: 30px;
     letter-spacing: 0.8rem;
     transition: all 0.3s ease;
-    color: #000000;
+    color: var(--bd-dark);
     z-index: 0;
 }
 
-.icon-aboutme i{
+.icon-sss i{
     display: flex;
     position: absolute;
     letter-spacing: 0.8rem;
@@ -189,28 +189,31 @@ p::selection {
 }
 
 .bxl-javascript {
-    top: 80%;
+    bottom: 50%;
     right: 50%;
     transform: rotate(30deg);
     font-size: 350px;
 }
 
 .bxl-html5 {
-    top: 125%;
-    left: 1%;
-    transform: rotate(-30deg);
+    top: 80%;
+    right: 50%;
+    transform: rotate(30deg);
     font-size: 350px;
 }
 
 .bxl-blender {
-    top: 125%;
-    left: 1%;
-    transform: rotate(-30deg);
+    top: 50%;
+    right: 50%;
+    transform: rotate(30deg);
     font-size: 350px;
 }
 
 .bxl-css3 {
-    right: 20%
+    top: 55%;
+    right: 70%;
+    transform: rotate(-30deg);
+    font-size: 350px;
 }
 
 .bxs-cube {
@@ -350,6 +353,10 @@ button:hover {
 
 .aboutme p {
     padding: 30px 10px 30px 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--bd-dark);
+    margin: 0px 40px 20px 40px;
 }
 
 .contact {
@@ -363,13 +370,6 @@ button:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.aboutme p {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #000000;
-    margin: 0px 40px 20px 40px;
 }
 
 footer {

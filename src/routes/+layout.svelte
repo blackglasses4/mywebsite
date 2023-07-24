@@ -1,4 +1,4 @@
-<script src="three.js">
+<script>
 	import '$lib/styles/style.css';
 	import { page } from '$app/stores';
 </script>

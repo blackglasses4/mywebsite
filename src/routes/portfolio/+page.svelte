@@ -1,7 +1,40 @@
+<section class="portfolio">
+    <h1 class="p">Portfolio</h1>
+</section>
+
+<a id="first" href="#"><div class="project first"></div></a>
+<button class="button">hey</button>
+<div id="second" class="project second"></div>
+<div id="thirst" class="project thirst"></div>
+
+
+
+<!-- <script>
+    const button = document.querySelector(".button");
+    const text = document.querySelector(".p");
+    const first = document.getElementById("first");
+    const second = document.getElementById("second");
+    const thirst = document.getElementById("thirst");
+    
+    button?.addEventListener("click", function() {
+        text?.classList.toggle("change");
+    });
+</script> -->
+
+
+
+
+
+
+
+
+<!-- 
 <script>
     import { onMount } from 'svelte';
-
     import * as THREE from 'three';
+    // import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+    // const loader = new GLTFLoader();
 
     function ada() {
         const scene = new THREE.Scene();
@@ -37,9 +70,4 @@
     onMount(async () => {
         ada();
     });
-</script>
-<h1>Portfolio</h1>
-ggg gggggi uhiaushdif uhasidf
-
-<div id="cos">COS</div>
-uuggiosdf
+</script> -->

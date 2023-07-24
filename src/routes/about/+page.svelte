@@ -11,7 +11,7 @@
         i multimedia w Wyższej Szkole Bankowej w Poznaniu.
     </p>
 </article>
-<!-- <div class="circle three"></div> -->
+<div class="mePhoto"></div>
 <article class="aboutme right">
     <p>
         Moja przygoda z tym fascynującym światem zaczęła się od poznania grafiki 2D. Stopniowo zaczęłam
@@ -22,7 +22,7 @@
         które pozwoli mi poszerzyć swoje horyzonty i odkryć nowe możliwości. 
     </p>
 </article>
-<div class="icon icon-aboutme">
+<div class="icon icon-sss">
     <i class='bx bxl-javascript'></i>
     <i class='bx bxl-html5'></i>
     <i class='bx bxl-blender'></i>

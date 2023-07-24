@@ -10,4 +10,3 @@
         <a href="https://www.linkedin.com/in/adrianna-paw%C5%82owska-a24850215/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
     </div>
 </address>
-
