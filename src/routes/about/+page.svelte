@@ -22,7 +22,7 @@
         które pozwoli mi poszerzyć swoje horyzonty i odkryć nowe możliwości. 
     </p>
 </article>
-<div class="icon icon-sss">
+<div class="icon icon-about">
     <i class='bx bxl-javascript'></i>
     <i class='bx bxl-html5'></i>
     <i class='bx bxl-blender'></i>

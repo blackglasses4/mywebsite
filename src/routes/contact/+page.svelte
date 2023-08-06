@@ -1,7 +1,7 @@
 <address class="contact">
-    <h1>Kontakt</h1>
+    <h1 class="title">Kontakt</h1>
     <div class="email">
-        <h3>Napisz do mnie na <a class="a-contact" href="mailto:adriannapx@gmail.com">Emailu</a></h3>
+        <h3>Napisz do mnie na <a href="mailto:adriannapx@gmail.com">Emailu</a></h3>
     </div>
     <div class="bx-icon">
         <a href="https://www.instagram.com/3d.greengirl/" target="_blank"><i class='bx bxl-instagram'></i></a>

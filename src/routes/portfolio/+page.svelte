@@ -1,25 +1,73 @@
 <section class="portfolio">
-    <h1 class="p">Portfolio</h1>
+    <h1 class="h1-portfolio">Portfolio</h1>
 </section>
-
-<a id="first" href="#"><div class="project first"></div></a>
-<button class="button">hey</button>
-<div id="second" class="project second"></div>
-<div id="thirst" class="project thirst"></div>
-
-
-
-<!-- <script>
-    const button = document.querySelector(".button");
-    const text = document.querySelector(".p");
-    const first = document.getElementById("first");
-    const second = document.getElementById("second");
-    const thirst = document.getElementById("thirst");
-    
-    button?.addEventListener("click", function() {
-        text?.classList.toggle("change");
-    });
-</script> -->
+<section class="main-home-three">
+    <!-- Projekt 1 -->
+    <div class="work__container">
+        <div class="work__img-wrapper work__image5"></div>
+        <div class="work__project work__content5">
+            <p class="work__project-description1">Baner</p>
+            <!-- <p class="work__project-description2">Wykonany w programie Blender wzorowany na podstawie
+                tutorialu <q><i>Blender Beginner Tutorial Blender Guru</i></q></p> -->
+            <!-- <a class="btn" href="/#">Three</a> -->
+        </div>
+        <div class="work__img-wrapper work__image6"></div>
+        <div class="work__project work__content6">
+            <p class="work__project-description1">Kostka 3D</p>
+            <!-- <p class="work__project-description2">Wykonany w programie Blender wzorowany na podstawie
+                tutorialu <q><i>Blender Beginner Tutorial Blender Guru</i></q></p> -->
+            <!-- <a class="btn" href="/#">Three</a> -->
+        </div>
+        <div class="work__img-wrapper work__image7"></div>
+        <div class="work__project work__content7">
+            <p class="work__project-description1">Donut</p>
+            <p class="work__project-description2">Wykonany w programie Blender wzorowany na podstawie
+                tutorialu <q><i>Blender Beginner Tutorial Blender Guru</i></q></p>
+            <!-- <a class="btn" href="/#">Three</a> -->
+        </div>
+        <div class="work__img-wrapper work__image8"></div>
+        <div class="work__project work__content8">
+            <p class="work__project-description1">Donut</p>
+            <p class="work__project-description2">Wykonany w programie Blender wzorowany na podstawie
+                tutorialu <q><i>Blender Beginner Tutorial Blender Guru</i></q></p>
+            <!-- <a class="btn" href="/#">Three</a> -->
+        </div>
+        <div class="work__img-wrapper work__image9"></div>
+        <div class="work__project work__content9">
+            <p class="work__project-description1">Donut</p>
+            <p class="work__project-description2">Wykonany w programie Blender wzorowany na podstawie
+                tutorialu <q><i>Blender Beginner Tutorial Blender Guru</i></q></p>
+            <!-- <a class="btn" href="/#">Three</a> -->
+        </div>
+        <div class="work__img-wrapper work__image10"></div>
+        <div class="work__project work__content10">
+            <p class="work__project-description1">Donut</p>
+            <p class="work__project-description2">Wykonany w programie Blender wzorowany na podstawie
+                tutorialu <q><i>Blender Beginner Tutorial Blender Guru</i></q></p>
+            <!-- <a class="btn" href="/#">Three</a> -->
+        </div>
+        <div class="work__img-wrapper work__image11"></div>
+        <div class="work__project work__content11">
+            <p class="work__project-description1">Donut</p>
+            <p class="work__project-description2">Wykonany w programie Blender wzorowany na podstawie
+                tutorialu <q><i>Blender Beginner Tutorial Blender Guru</i></q></p>
+            <!-- <a class="btn" href="/#">Three</a> -->
+        </div>
+        <div class="work__img-wrapper work__video12">
+            <video height="360px"
+            width="640px" controls>
+                <track default kind="captions">
+                <source src="/projects3D/flower_geometry_nodes-1-120.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="work__project work__content12">
+            <p class="work__project-description1">Donut</p>
+            <p class="work__project-description2">Wykonany w programie Blender wzorowany na podstawie
+                tutorialu <q><i>Blender Beginner Tutorial Blender Guru</i></q></p>
+            <!-- <a class="btn" href="/#">Three</a> -->
+        </div>
+    </div>
+</section>
 
 
 

@@ -1,0 +1,84 @@
+.aboutme {
+    width: 50%;
+    justify-content: center;
+    z-index: 1;
+}
+
+.aboutme p {
+    padding: 30px 10px 30px 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--bd-dark);
+    margin: 0px 40px 20px 40px;
+}
+
+.left {
+    display: block;
+    position: relative;
+    right: 20%;
+}
+
+.right {
+    display: block;
+    position: relative;
+    left: 20%;
+}
+
+.mePhoto {
+    background-image: url(/portraits/3.JPG);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    z-index: 2;
+    box-shadow: 0 0 30px 5px #000000;
+    border: 5px solid var(--limegreen);
+    border-radius: 50%;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 200px;
+    right: 150px;
+}
+
+.icon-about i{
+    display: flex;
+    position: absolute;
+    letter-spacing: 0.8rem;
+    color: var(--second-bd-dark);
+    z-index: 0;
+}
+
+.bxl-javascript {
+    bottom: -130%;
+    right: 40%;
+    transform: rotate(30deg);
+    font-size: 350px;
+}
+
+.bxl-html5 {
+    top: 80%;
+    right: 50%;
+    transform: rotate(30deg);
+    font-size: 350px;
+}
+
+.bxl-blender {
+    bottom: 30%;
+    right: 1%;
+    transform: rotate(10deg);
+    font-size: 350px;
+}
+
+.bxl-css3 {
+    top: 125%;
+    right: 70%;
+    transform: rotate(-30deg);
+    font-size: 350px;
+}
+
+@media (min-width: 475px) {}
+@media (min-width: 640px) {}
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1280px) {}
+@media (min-width: 1536px) {}
