@@ -2,22 +2,39 @@
 	import '$lib/styles/main.css';
 	import '$lib/styles/aboutme.css';
 	// import '$lib/styles/portfolio.css';
-	import '$lib/styles/contact.css';
 	import { page } from '$app/stores';
 </script>
-<nav class="navbar">
+<header id="header">
+	<!-- Logo -->
 	<a class="logo" href="/">adrianna <span>pawłowska</span></a>
-	<div class="nav-links">
-		<ul>
+	<!-- Hamburger icon -->
+	<input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+	<!-- Menu -->
+	<nav class="nav">
+		<ul class="menu">
+			<li>
+				<select id="theme-selector" >
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+					<option value="auto">Auto</option>
+				</select>
+			</li>
 			<li><a href="/about" class:active={$page.url.pathname == '/about/'}>o mnie</a></li>
-			<li><a href="/portfolio" class:active={$page.url.pathname == '/portfolio/'}>portfolio</a></li>
-			<li><a href="/contact" class:active={$page.url.pathname == '/contact/'}>kontakt</a></li>
-			<li class="header_line"></li>
-			<!-- <button class="header_sun"><i class='bx bxs-sun'></i></button> -->
+			<li class="subnav">
+				<p class="subnavbtn">Contact <i class='bx bxs-down-arrow'></i></p>
+				<div class="subnav-content">
+					<a href="https://www.instagram.com/3d.greengirl/"><i class='bx bx-right-arrow-alt'></i> Instagram</a>
+					<a href="https://www.facebook.com/profile.php?id=100013368822697"><i class='bx bx-right-arrow-alt'></i> Facebook</a>
+					<a href="https://github.com/blackglasses4"><i class='bx bx-right-arrow-alt'></i> Github</a>
+					<a href="https://www.linkedin.com/in/adrianna-paw%C5%82owska-a24850215/"><i class='bx bx-right-arrow-alt'></i> Linkedln</a>
+					<a href="mailto:adriannapx@gmail.com"><i class='bx bx-right-arrow-alt'></i> Wyślij Email</a>
+				</div>
+			</li>
+			<li id="theme"><i class='bx bxs-moon'></i></li>
 		</ul>
-	</div>
-	<a id="click" href="/"><i class='bx bx-menu'></i></a>
-</nav>
+	</nav>
+</header>
 
 <main>
 	<slot />
@@ -39,5 +56,4 @@
     </div>
 	
 </div>
-
 

@@ -3,14 +3,14 @@
 </section>
 <section id="container">
     <div class="aboutme one">
-         <p>
-            Witam, jestem Adrianna Pawłowska, 3D designer oraz Web developer z pasją. 
-            Obecnie mieszkam w Poznaniu, jednym z miast w Polsce, gdzie przez ostatnie dwadzieścia lat,
+         <p class="big-letter">
+            Witam, jestem <span class="aboutme-name">Adrianna Pawłowska</span>, 3D designer oraz Web developer z pasją. 
+            Obecnie mieszkam w Poznaniu, jednym z miast w Polsce. <br><br> Przez ostatnie dwadzieścia lat,
             od samego początku mojej drogi, pasjonuję się odkrywaniem i rozwijaniem moich najskrytszych
             umiejętności. Na przestrzeni czasu zauważyłam, że ciągnie mnie do komputerów oraz projektowaniu
             przeróżnych projektów w dziedzinie grafiki. Dlategoteż postanowiłam podjąć wyzwanie, poświęcić 
             swój czas na naukę oraz samodzielnie doskonalić się w świecie trójwymiarowym, tworząc przy tym 
-            unikalne strony internetowe. Obecnie studiuję już trzeci rok Informatykę ze specjalnością grafika
+            unikalne strony internetowe. <br><br> Obecnie studiuję już trzeci rok Informatykę ze specjalnością grafika
             i multimedia w Wyższej Szkole Bankowej w Poznaniu.
         </p> 
     </div>
@@ -18,6 +18,9 @@
         <div class="mePhoto"></div>
     </div>
     <div class="aboutme three">
+        <i class='bx bxl-html5'></i>
+        <i class='bx bxl-blender'></i>
+        
     </div>
     <div class="aboutme four">
       <p>
@@ -25,7 +28,7 @@
             się interesować grafiką 3D oraz Web developerem, dlatego poświęciłam się tym dwom dziedziną.
             Na przestrzeni lat osobiście zdobyłam umiejętności pracy z językami
             programistycznymi oraz darmowymi programami graficznymi takich jak Inskape, Gimp, Krita, Blender,
-            C#, Python, HTML, CSS, JavaScript oraz GTFL. Dzięki tym umiejętnością chętnie podejmę każde wyzwanie,
+            C#, HTML, CSS oraz JavaScript. Dzięki tym umiejętnością chętnie podejmę każde wyzwanie,
             które pozwoli mi poszerzyć swoje horyzonty i odkryć nowe możliwości. 
         </p>
     </div>
@@ -38,41 +41,7 @@
             w mych pracach będę w stanie stworzyć coś niezwykłego i wyróżniającego się sposród innych użytkowników.
         </p>
     </div>
-    <div class="aboutme six"></div>
+    <div class="aboutme six">
+        <i class='bx bxl-css3' ></i>
+    </div>
 </section>
-
-<!-- /* .icon-about i{
-    display: flex;
-    position: absolute;
-    letter-spacing: 0.8rem;
-    color: var(--second-bd-dark);
-    z-index: 0;
-}
-
-.bxl-javascript {
-    bottom: -130%;
-    right: 40%;
-    transform: rotate(30deg);
-    font-size: 350px;
-}
-
-.bxl-html5 {
-    top: 80%;
-    right: 50%;
-    transform: rotate(30deg);
-    font-size: 350px;
-}
-
-.bxl-blender {
-    bottom: 30%;
-    right: 1%;
-    transform: rotate(10deg);
-    font-size: 350px;
-}
-
-.bxl-css3 {
-    top: 125%;
-    right: 70%;
-    transform: rotate(-30deg);
-    font-size: 350px;
-} */ -->
