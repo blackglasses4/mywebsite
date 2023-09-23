@@ -1,18 +1,34 @@
 :root {
-   --first-color: #e2dfd3;
-   --second-color:  #1f242d;
    --bd-dark: #1f242d;
    --darkgreen:#143D22;
    --limegreen:#00E83A;
    --darkred: #480509;
    --lightpink: #B0A195;
 }
+/* 
+Light color scheme (Default)
+Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+   --first-color: #e2dfd3;
+   --second-color:  #1f242d;
+}
 
-.dark-theme {
+/* Dark color scheme (Auto)
+Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+   :root:not([data-theme]) {
+      --first-color: #1f242d;
+      --second-color: #fff;
+   }
+}
+/* 
+Dark color scheme (Forced)
+Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
    --first-color: #1f242d;
    --second-color: #fff;
 }
-
  
 * {
    margin: 0;

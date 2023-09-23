@@ -14,7 +14,7 @@
 	<nav class="nav">
 		<ul class="menu">
 			<li>
-				<select id="theme-selector" >
+				<select id="theme-selector" onchange="changeTheme(this.value)">
 					<option value="light">Light</option>
 					<option value="dark">Dark</option>
 					<option value="auto">Auto</option>

@@ -12,9 +12,36 @@
 	<meta name="viewport" content="width=device-width" />
 	<title>Adrianna Pawlowska</title>
 	%sveltekit.head%
+
+	<script>
+		function setTheme(theme) {
+			if (theme && theme != 'auto') {
+				document.getElementsByTagName('html')[0].setAttribute('data-theme', theme);
+				document.getElementById('theme-selector').value = theme;
+			}
+			else {
+				document.getElementsByTagName('html')[0].removeAttribute('data-theme');
+				document.getElementById('theme-selector').value = 'auto';
+			}
+		}
+
+		function saveTheme(theme) {
+			if (theme && theme != 'auto') {
+				localStorage.setItem('theme', theme);
+			}
+			else {
+				localStorage.removeItem('theme');
+			}
+		}
+
+		function changeTheme(theme) {
+			setTheme(theme);
+			saveTheme(theme);
+		}
+	</script>
 </head>
 
-<body data-sveltekit-preload-data="hover">
+<body data-sveltekit-preload-data="hover" onload="setTheme(localStorage.getItem('theme'))" >
 	<div style="display: contents">%sveltekit.body%</div>
 
 </body>
