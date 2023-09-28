@@ -1,10 +1,9 @@
 <section id="section-welcome">
-    <!-- <div class="circle first"></div> -->
         <h1>projektant 2D, 3D</h1>
         <p>oraz pełny przygód</p>
         <h1>frontend Developer,</h1>
         <p>którego ciągnie do tworzenia unikalnych i rzucających się w oczy projektów.</p>
-        <a href="#section-aboutme"><i class='bx bx-chevron-down'></i></a>
+        <a href="#section-aboutme"><i class='bx bxs-chevron-down' ></i></a>
 </section>
 
 <section id="section-aboutme">
@@ -25,27 +24,24 @@
     <div class="work-container">
         <div class="work-img-wrapper image-1"></div>
         <div class="work-project work-content-1">
-            <p class="project-description1">Isometric room</p>
-            <p class="project-description2">Wykonany na podstawie
-                tutorialu <q><i>Blender 3D - Create a 3D Isometric BEDROOM in 15 minutes | Beginner Tutorial
-                    3DGreenhorm</i></q>
+            <p class="project-description1">Królestwo gadów</p>
+            <p class="project-description2">Autorska praca prezentująca baner okładki oraz zakładki. Projekt wykonany z wykorzystaniem programu Krita.
             </p>
         </div>
         <div class="work-img-wrapper image-2"></div>
         <div class="work-project work-content-2">
-            <p class="project-description1">Isometric room</p>
-            <p class="project-description2">Wykonany na podstawie
-                tutorialu <q><i>Blender 3D - Create a 3D Isometric BEDROOM in 15 minutes | Beginner Tutorial
-                    3DGreenhorm</i></q>
+            <p class="project-description1">Łańcuch</p>
+            <p class="project-description2">Projekt przedstawiający łańcuch z krzyżami, powstały przy użyciu oprogramowania Blender. Łańcuch wykonany na podstawie
+                tutorialu <q><i><a id="project-a" href="https://www.youtube.com/watch?v=OzCeNXu3iLI&t=166s">Modyfikatory: Curve i Wave - Blender 2.81</a></i></q>.
             </p>
         </div>
 
         <div class="work-img-wrapper image-3"></div>
         <div class="work-project work-content-3">
-            <p class="project-description1">Isometric room</p>
-            <p class="project-description2">Wykonany na podstawie
-                tutorialu <q><i>Blender 3D - Create a 3D Isometric BEDROOM in 15 minutes | Beginner Tutorial
-                    3DGreenhorm</i></q>
+            <p class="project-description1">Płótno dekoracyjne z klamerkami</p>
+            <p class="project-description2">Oryginalne płótno z klamerkami, stworzone przy pomocy programu Blender. Sznurek powstał
+                dzięki tutorialowi <q><i><a id="project-a" href="https://www.youtube.com/watch?v=Aajp72RBWHw">How to Make Rope in blender in 90sec -
+                     Quickie Tuts #07</a></i></q>.
             </p>
         </div>
     </div>
