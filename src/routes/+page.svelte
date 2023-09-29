@@ -2,7 +2,7 @@
         <h1>projektant 2D, 3D</h1>
         <p>oraz pełny przygód</p>
         <h1>frontend Developer,</h1>
-        <p>którego ciągnie do tworzenia unikalnych i rzucających się w oczy projektów.</p>
+        <p>którego pasjonuje tworzenie unikalnych i rzucających się w oczy projektów.</p>
         <a href="#section-aboutme"><i class='bx bxs-chevron-down' ></i></a>
 </section>
 

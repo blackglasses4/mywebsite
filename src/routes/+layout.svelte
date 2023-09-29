@@ -41,7 +41,7 @@
 <div id="section-contact">
 	<div class="contact-local">
         <h2>Based in Poland</h2>
-		<footer>&copy; 2023 by Adrianna. All rights reversed.</footer>
+		<footer>&copy; 2023 by Adrianna. All rights reserved.</footer>
     </div>
     <div class="contact-links">
         <h2>Social</h2>

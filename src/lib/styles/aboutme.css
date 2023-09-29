@@ -13,8 +13,6 @@
     --second-color: #fff;
  }
 
-
- 
 #introduce-about {
     width: 100%;
     height: 43dvh;
@@ -72,16 +70,17 @@
 .aboutme {
     color: var(--second-color);
     font-size: 1.5rem;
-    padding: 20px;
+    padding:  0 20px;
     border-radius: 20px;
     height: auto;
 }
 
 .aboutme .big-letter::first-letter {
-    font-size: 5rem;
-   color: var(--second-color);
-   text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-   0px -4px 10px rgba(255,255,255,0.2);}
+    font-size: 150%;
+    color: var(--second-color);
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.2);
+}
 
 .aboutme-name {
     font-style: italic;
@@ -220,10 +219,10 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
     .bxl-blender {
-        transform: rotate(30deg);
-        font-size: 190px;
+        transform: rotate(20deg);
+        font-size: 160px;
     }
     
     .bxl-html5 {
@@ -243,4 +242,12 @@
     .aboutme {
         font-size: 1.1em;
     }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .mePhoto {
+    width: 250px;
+    height: 250px;
+}
 }
