@@ -1,0 +1,128 @@
+#section-portfolio {
+    background: linear-gradient(
+       -0, 
+       var(--limegreen) 1%,
+       var(--first-color) 50%
+    );
+    position: relative;
+ }
+ 
+ #section-portfolio h1 {
+    color: var(--second-color);
+    padding-top: 3rem;
+    font-size: 4.5rem;
+    text-decoration: .05em underline dotted var(--second-color);
+    text-underline-offset: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+ }
+ 
+ .work-projects {
+    padding: 7rem;
+    display: grid;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    'image1 image2'
+    'image3 image4'
+    'image5 image6';
+    place-items: center;
+ }
+ 
+ .work-img {
+    position: relative;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px .1px var(--bd-dark);
+    height: 500px;
+    width: 500px;
+ }
+ 
+ .work-img::after {
+    content: '';
+    background-color: rgba(0, 232, 58, 0.2);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s;
+ }
+ 
+ .work-img:hover::after {
+    background: rgba(0, 232, 58, 0.0);
+ }
+ 
+ .image-one {
+    grid-area: image1;
+    background-image: url(/image/babeczka-3.png);
+ }
+ 
+ .image-two {
+    grid-area: image2;
+    background-image: url(/image/dog_4.png);
+ }
+ 
+ .image-three {
+    grid-area: image3;
+    background-image: url(/image/handbag_8.png);
+ }
+ 
+ .image-four {
+    grid-area: image4;
+    background-image: url(/image/mikrofon_blender2.png);
+ }
+ 
+ .image-five {
+    grid-area: image5;
+    background-image: url(/image/lancuch.png);
+ }
+ 
+ .image-six {
+    grid-area: image6;
+    background-image: url(/image/ścianka_5.png);
+ }
+
+@media only screen and (max-width: 1300px) {
+    .work-img {
+        height: 400px;
+        width: 400px;
+     }
+} 
+
+@media only screen and (max-width: 900px) {
+    .work-projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'image1'
+        'image2'
+        'image3'
+        'image4'
+        'image5'
+        'image6'
+        ;
+        place-items: center;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .work-img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .work-img {
+        height: 200px;
+        width: 200px;
+    }
+}

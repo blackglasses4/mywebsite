@@ -1,37 +1,26 @@
 <script>
 	import '$lib/styles/main.css';
 	import '$lib/styles/aboutme.css';
+	import '$lib/styles/portfolio.css';
 	import { page } from '$app/stores';
+	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
+	import LanguageSwitch from '$lib/components/LanguageSwitch.svelte';
 </script>
+
 <header id="header">
 	<a class="logo" href="/">adrianna <span>pawłowska</span></a>
-	<input class="side-menu" type="checkbox" id="side-menu"/>
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+		<ThemeSwitch />
+		<!-- <LanguageSwitch /> -->
 
-	<nav class="nav">
-		<ul class="menu">
-			<li><a href="/about" class:active={$page.url.pathname == '/about/'}>o mnie</a></li>
-			<li>
-				<label for="styleSelect1" class="custom-select">
-					<select class="subnavbtn" id="theme-selector" onchange="changeTheme(this.value)">
-						<option value="light">Jasny</option>
-						<option value="dark">Ciemny</option>
-						<option value="auto">Systemowy</option>
-					</select>
-				</label>
-			</li>
-			<li>
-				<select class="subnavbtn" onchange="window.location.href=this.value;" >
-					<option value="0">Contact</option>
-					<option value="https://www.instagram.com/3d.greengirl/">Instagram</option>
-					<option value="https://www.facebook.com/profile.php?id=100013368822697">Facebook</option>
-					<option value="https://github.com/blackglasses4">Github</option>
-					<option value="https://www.linkedin.com/in/adrianna-paw%C5%82owska-a24850215/">Linkedln</option>
-					<option value="mailto:adriannapx@gmail.com">Wyślij Email</option>
-				</select>
-			</li>
-		</ul>
-	</nav>
+		<input class="side-menu" type="checkbox" id="side-menu"/>
+		<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+		
+		<nav class="nav">
+			<ul class="menu">
+				<li><a href="/about" id="about" class:active={$page.url.pathname == '/about/'}>O mnie</a></li>
+				<li><a href="/portfolio" id="portfolio" class:active={$page.url.pathname == '/portfolio/'}>Portfolio</a></li>
+			</ul>
+		</nav>
 </header>
 
 <main>

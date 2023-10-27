@@ -47,20 +47,118 @@ body {
 
 header {
    background-color: var(--first-color);
+   position: static;
    width: 100%;
-   position: fixed;
-   display: flex;
-   justify-content: space-between;
-   align-items: start; 
    flex-wrap: wrap;
    z-index: 2;
    border-bottom: 2px solid var(--second-color);
+   align-items: center;
+   display: flex;
+   justify-content:space-between;
 }
 
-.logo {
+.theme-switch {
+   color: var(--second-color);
+}
+
+.theme-switch:hover {
+   color: var(--limegreen);
+}
+
+.flags {
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+.flags__item img{
+   margin: 0 .2rem;
+   width: 32px;
+   height: 32px;
+}
+
+/* .language-selected {
+   display: flex;
+   align-items: center;
+   color: var(--second-color);
+}
+
+.language-selected:before {
+   content: '';
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   background-image: url(https://flagsapi.com/PL/flat/32.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin-right: 10px;
+}
+
+.language ul {
+   position: absolute;
+   width: 140px;
+   top: 5%;
+   background-color: #fff;
+   border: 1px solid black;
+   padding-top: 10px;
+   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+   display: none;
+}
+
+.language ul li {
+   list-style: none;
+}
+
+.language ul li a {
+   display: block;
+   color: black;
+   padding-top: 5px 10px;
+   font-size: 1em;
+}
+
+.language ul li:hover {
+   background-color: #00E83A;
+}
+
+.language ul li a:before {
+   content: '';
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   background-size: contain;
+   vertical-align: middle;
+   background-repeat: no-repeat;
+   margin-right: 10px;
+}
+
+a.pl::before {
+   background-image: url(https://flagsapi.com/PL/flat/32.png);
+}
+
+a.en::before {
+   background-image: url(https://flagsapi.com/US/flat/32.png);
+}
+
+.language:hover ul {
+   display: block;
+}
+
+/* .language ul li a:: header .container.pl {
+   display: none;
+} */
+
+header a {
+   padding: .6em 1em;
+   color: var(--second-color);
+   font-size: 2.1rem;
+}
+
+.logo  {
    color: var(--second-color);
    font-size: 2em;
-   padding: .6em 1em;
+   align-items: center;
    text-transform: capitalize;
 }
  
@@ -68,23 +166,26 @@ header {
    color: var(--limegreen);
 }
 
-.nav {
-   display: flex;
+nav{
+   display: block;
    width: 100%;
    height: auto;
    overflow: hidden;
    background: var(--first-color);
 }
 
-.menu li:last-child {
+.menu {
+   display: flex;
+}
+
+.menu li{
    padding-right: 2em;
 }
 
-.menu a, .menu select {
+.menu a {
    display: block;
-   padding: 30px;
+   padding: 1.5em .5em 1em .5em;
    font-size: 1rem; 
-   text-transform: capitalize;
    color: var(--second-color);
    letter-spacing: .04rem;
 }
@@ -136,7 +237,7 @@ header {
 }
 
 .side-menu:checked ~ nav{
-   max-height: 100%;
+   max-height: 10%;
 }
 
 .side-menu:checked ~ .hamb .hamb-line {
@@ -153,32 +254,13 @@ header {
    top:0;
 }
 
-select {
-   border: none;
-   background: transparent;
-   text-align: center;
-}
-
-select.subnavbtn {
-  font-size: 16px;
-  color: var(--second-color);
-}
-
-select.subnavbtn:hover {
-   color: var(--limegreen);
- }
-
-select.subnavbtn:focus {
-   color: var(--limegreen);
- }
-
 #section-welcome {
    width: 100%;
-   height: 100dvh;
+   height: 85dvh;
    background: linear-gradient(
       0deg, 
-      var(--limegreen) 1%,
-      var(--first-color) 50%
+      var(--limegreen) 10%,
+      var(--first-color) 40%
    );
    display: flex;
    flex-direction: column;
@@ -191,6 +273,26 @@ select.subnavbtn:focus {
    font-size: 4.5rem;
    font-weight: 800;
    text-transform: capitalize;
+}
+
+.second-text::before {
+   content: "";
+   position: absolute;
+   height: 15%;
+   width: 43%;
+   background-color: var(--bd-dark);
+   border-left: 2px solid var(--limegreen);
+   animation: animate 4s steps(12) infinite;
+   
+}
+
+@keyframes animate {
+   30%, 70% {
+      right: 100%;
+   }
+   100% {
+      right: 0%;
+   }
 }
 
 #section-welcome p {
@@ -217,7 +319,7 @@ select.subnavbtn:focus {
 }
 
 #section-aboutme .image-grid {
-   background-image: url(/portraits/portret-siebie.jpg);
+   background-image: url(/image/portret-siebie.jpg);
    height: 450px;
    width: 450px;
    border-radius: 50%;
@@ -233,7 +335,7 @@ select.subnavbtn:focus {
    font-size: 1.5rem;
    font-weight: 400;
    text-align: center;
-   padding-top: 4rem;
+   padding-top: 5rem;
 }
 
 .aboutme-grid {
@@ -242,28 +344,6 @@ select.subnavbtn:focus {
    gap: 1rem;
    place-items: center;
    padding: 3rem;
-}
-
-.aboutme-grid .text-grid button {
-   border: none;
-   background: var(--first-color);
-   margin-top: 2rem;
-   padding: 0.75rem 1.875rem;
-   border-radius: 20px;
-   font-size: 0.8em;
-   transition: .5s ease;
-   text-transform: uppercase;
-}
-
-.aboutme-grid .text-grid button a {
-   color: var(--second-color);
-   font-weight: 800;
-}
- 
-.aboutme-grid .text-grid button:hover {
-   transition: .3s ease;
-   transform: scale(1.05);
-   cursor: pointer;
 }
 
 #section-projects {
@@ -287,6 +367,7 @@ select.subnavbtn:focus {
 
 .work-container {
    padding: 7rem;
+   padding-bottom: 0;
    display: grid;
    width: 100%;
    justify-content: center;
@@ -337,17 +418,17 @@ select.subnavbtn:focus {
 
 .image-1 {
    grid-area: image1;
-   background-image: url(/projects2D/baner.png);
+   background-image: url(/image/baner.png);
 }
 
 .image-2 {
    grid-area: image2;
-   background-image: url(/projects3D/lancuch.png);
+   background-image: url(/image/lancuch.png);
 }
 
 .image-3 {
    grid-area: image3;
-   background-image: url(/projects3D/ścianka_5.png);
+   background-image: url(/image/ścianka_5.png);
 }
 
 .work-content-1 {
@@ -384,29 +465,117 @@ select.subnavbtn:focus {
    text-underline-offset: .5rem;
 }
 
-#project-a:hover {
-   color: var(--color-a);
+.div-button {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 5%;
+} 
+
+button.about-more {
+   margin: 1rem;
 }
 
-button {
-   border: none;
-   background: var(--limegreen);
-   padding: 0.75rem 1.875rem;
-   border-radius: 20px;
-   font-weight: bold;
-   font-size: 0.9em;
-   transition: .4s ease;
-   text-transform: uppercase;
+button.portfolio-more, button.about-more {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   outline: none;
+   border: 0;
+   vertical-align: middle;
+   text-decoration: none;
+   background: transparent;
+   padding: 0;
+   font-size: inherit;
+  }
+  
+.div-button  button.portfolio-more{
+   width: 18rem;
+   height: auto;
 }
 
-button a {
+button.about-more  {
+   width: 14rem;
+   height: auto;
+}
+  
+button.portfolio-more .circle, button.about-more .circle {
+   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+   position: relative;
+   display: block;
+   margin: 0;
+   width: 3rem;
+   height: 3rem;
+   background: var(--first-color);
+   border-radius: 1.625rem;
+}
+  
+button.portfolio-more .circle .icon,
+button.about-more .circle .icon {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+}
+  
+button.portfolio-more .circle .icon.arrow,
+button.about-more .circle .icon.arrow {
+   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+   left: 0.625rem;
+   width: 1.125rem;
+   height: 0.125rem;
+}
+  
+button.portfolio-more .circle .icon.arrow::before,
+button.about-more .circle .icon.arrow::before {
+   position: absolute;
+   content: "";
+   top: -0.29rem;
+   right: 0.0625rem;
+   width: 0.625rem;
+   height: 0.625rem;
+   border-top: 0.125rem solid var(--second-color);
+   border-right: 0.125rem solid var(--second-color);
+   transform: rotate(45deg);
+}
+  
+button.portfolio-more .button-text a,
+button.about-more .button-text a {
+   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0;
+   padding: 0.75rem 0;
+   margin: 0 0 0 1.85rem;
    color: var(--first-color);
    font-weight: 900;
+   line-height: 1.6;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: .04rem;
 }
- 
-button:hover {
-   transform: scale(1.1);
-   cursor: pointer;
+
+button.about-more .button-text a {
+   font-size: 1rem;
+}
+  
+button:hover .circle {
+   width: 100%;
+}
+  
+button:hover .circle .icon.arrow{
+   background: var(--second-color);
+   transform: translate(1rem, 0);
+}
+  
+button:hover .button-text a{
+   color: var(--second-color);
+   opacity: 1;
 }
 
 #section-contact {
@@ -486,28 +655,27 @@ h2::selection
 
    .menu {
       width: 100%;
+      display: block;
    }
 
   .menu li{
-      display: flex;
+      display: block;
       width: 100%;
-      justify-content: right;
-      text-align: center;
+      text-align: right;
   }
 
-  .menu a {
-    padding-right: 3.9em;
-    padding-left: .7em;
+  .menu li a {
+      padding: 2em .0 2em .1em;
   }
 
-  .menu li{
-   padding-left: 0;
-   padding-right: 2.2em;
-  }
-  
   #section-welcome p {
    text-align: center;
 }
+
+   .logo {
+      font-size: 2em;
+      padding: 0 1em;
+   }
 }
 
 @media only screen and (min-width: 900px) {
@@ -518,12 +686,8 @@ h2::selection
       align-items: center;
   }
 
-  .menu a, .subnavbtn {
+  .menu a {
       display: block;
-  }
-
-  .menu li{
-      float: left;
   }
 
   .menu a:hover{
@@ -538,10 +702,6 @@ h2::selection
 
 
 @media only screen and (max-width: 800px) {
-   header {
-      align-items: center; 
-   }
-   
    #section-welcome h1 {
       font-size: 3.5rem;
    }
@@ -559,11 +719,6 @@ h2::selection
    .work-img-wrapper {
       height: 270px;
       width: 480px;
-   }
-
-   .logo {
-      font-size: 2em;
-      padding: 0 1em;
    }
 }
 
@@ -652,8 +807,17 @@ h2::selection
 }
 
 @media only screen and (max-width: 540px) {
+   .theme-switch {
+      padding: 0;
+   }
+   
+   .hamb {
+      padding: 40px 2em 40px 0;
+   }
+
    .work-container {
       padding: 5rem;
+      padding-bottom: 0;
    }
 
    .project-description1 {
@@ -677,25 +841,20 @@ h2::selection
       padding-right: .5em;
    }
 
-   footer {
-      text-align: start;
-      padding-right: .8em;
-   }
-
-   .hamb{
-      padding-left: .5em;
-   }
-
    .bxs-chevron-down {
       top: 85%;
       right: 5%;
       font-size: 4rem;
    }
 
-   #section-aboutme .text-grid {
-      width: 100%;
-      font-size: 1.1rem;
-      padding: 3rem 1.2rem;
+   .div-button {
+      padding: 10%;
+      padding-top: 5%;
+   } 
+
+   footer {
+      text-align: start;
+      padding-right: .9em;
    }
 }
 
@@ -704,13 +863,12 @@ h2::selection
       height: 250px;
       width: 250px;
    }
-
    #section-welcome p {
       font-size: 1.1rem;
    }
 
    .work-container {
-      padding: 5rem .1rem;
+      padding: 5rem .1rem 0 .1rem;
    }
 }
 
@@ -718,5 +876,14 @@ h2::selection
    .work-img-wrapper {
       height: 166px;
       width: 295px;
+   }
+
+   .logo {
+      font-size: 1em;
+      padding: 0 1em;
+   }
+
+   .hamb {
+      padding: 40px 1em 40px 0;
    }
 }

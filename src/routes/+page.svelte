@@ -1,7 +1,7 @@
 <section id="section-welcome">
-        <h1>projektant 2D, 3D</h1>
-        <p>oraz pełny przygód</p>
-        <h1>frontend Developer,</h1>
+        <p class="text first-text">Pełny przygód</p>
+        <h1 class="text second-text">projektant 2D, 3D</h1>
+        <!-- <h1>frontend Developer,</h1> -->
         <p>którego pasjonuje tworzenie unikalnych i rzucających się w oczy projektów.</p>
         <a href="#section-aboutme"><i class='bx bxs-chevron-down' ></i></a>
 </section>
@@ -14,7 +14,12 @@
                 <p><i><q>Modelowanie 2D, 3D oraz tworzenie stron internetowych nie jest tylko
                 zwykłą pracą dla mnie, lecz prawdziwą pasją.</q></i></p>
             </blockquote>
-            <button><a href="/about">więcej o mnie</a></button>
+            <button class="about-more">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text"><a href="/portfolio">więcej o mnie</a></span>
+            </button>
         </div>
     </div>
 </section>
@@ -44,5 +49,13 @@
                      Quickie Tuts #07</a></i></q>.
             </p>
         </div>
+    </div>
+    <div class="div-button">
+        <button class="portfolio-more">
+            <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+            </span>
+            <span class="button-text"><a href="/portfolio">więcej projektów</a></span>
+        </button>
     </div>
 </section>
