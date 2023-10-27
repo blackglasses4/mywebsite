@@ -1,6 +1,6 @@
 <section id="section-welcome">
         <p class="text first-text">Pełny przygód</p>
-        <h1 class="text second-text">projektant 2D, 3D</h1>
+        <h1></h1>
         <!-- <h1>frontend Developer,</h1> -->
         <p>którego pasjonuje tworzenie unikalnych i rzucających się w oczy projektów.</p>
         <a href="#section-aboutme"><i class='bx bxs-chevron-down' ></i></a>

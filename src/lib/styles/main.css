@@ -273,25 +273,55 @@ nav{
    font-size: 4.5rem;
    font-weight: 800;
    text-transform: capitalize;
+   position: relative;
 }
 
-.second-text::before {
+#section-welcome h1::before {
+   content: "";
+   animation: words 20s infinite;
+}
+
+#section-welcome h1::after {
    content: "";
    position: absolute;
-   height: 15%;
-   width: 43%;
-   background-color: var(--bd-dark);
-   border-left: 2px solid var(--limegreen);
-   animation: animate 4s steps(12) infinite;
-   
+   width: calc(100% + 8px);
+   height: 100%;
+   background-color: var(--first-color);
+   border-left: 3px solid #00E83A;
+   right: -13px;
+   animation: cursor .9s infinite, typing 20s steps(14) infinite;
 }
 
-@keyframes animate {
-   30%, 70% {
-      right: 100%;
+@keyframes cursor {
+   to {
+      border-left: 2px solid var(--bd-dark);
    }
-   100% {
-      right: 0%;
+}
+
+@keyframes words {
+   0%, 20% {
+      content: "Projektant 2D, 3D";
+   }
+   21%, 40% {
+      content: "Frontend Developer";
+   }
+   41%, 60% {
+      content: "Projektant 2D, 3D";
+   }
+   61%, 80% {
+      content: "Frontend Developer";
+   }
+   81%, 100% {
+      content: "Projektant 2D, 3D";
+   }
+}
+
+@keyframes typing {
+   10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+      width: 0;
+   }
+   5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+      width: calc(100% + 8px);
    }
 }
 
@@ -670,6 +700,7 @@ h2::selection
 
   #section-welcome p {
    text-align: center;
+   padding: 0 1em;
 }
 
    .logo {
@@ -751,7 +782,7 @@ h2::selection
    }
 
    #section-welcome h1 {
-      font-size: 3.4rem;
+      font-size: 3.6rem;
       text-align: center;
       padding: 0 1rem;
    }
@@ -770,6 +801,24 @@ h2::selection
       padding: 3rem .9rem 0 .9rem;
    }
    
+   #section-welcome  h1 {
+      font-size: 2.7rem;
+   }
+
+   #section-welcome h1::after {
+      right: -2px;
+      position: absolute;
+      top: 0%;
+   }
+
+   #section-welcome  h1 {
+      font-size: 3.4rem;
+   }
+
+   #section-welcome h1::after {
+      right: 12px;
+   }
+
    #section-aboutme {
       height: auto;
    }
@@ -864,7 +913,7 @@ h2::selection
       width: 250px;
    }
    #section-welcome p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
    }
 
    .work-container {
