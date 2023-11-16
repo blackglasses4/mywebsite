@@ -287,32 +287,32 @@ nav{
    width: calc(100% + 8px);
    height: 100%;
    background-color: var(--first-color);
-   border-left: 3px solid #00E83A;
+   border-left: 3px solid var(--second-color);
    right: -13px;
    animation: cursor .9s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
    to {
-      border-left: 2px solid var(--bd-dark);
+      border-left: 2px solid var(--first-color);
    }
 }
 
 @keyframes words {
    0%, 20% {
-      content: "Projektant 2D, 3D";
+      content: "Projektantka 2D, 3D";
    }
    21%, 40% {
-      content: "Frontend Developer";
+      content: "Programistka Frontend";
    }
    41%, 60% {
-      content: "Projektant 2D, 3D";
+      content: "Projektantka 2D, 3D";
    }
    61%, 80% {
-      content: "Frontend Developer";
+      content: "Programistka Frontend";
    }
    81%, 100% {
-      content: "Projektant 2D, 3D";
+      content: "Projektantka 2D, 3D";
    }
 }
 
@@ -397,7 +397,6 @@ nav{
 
 .work-container {
    padding: 7rem;
-   padding-bottom: 0;
    display: grid;
    width: 100%;
    justify-content: center;
@@ -493,6 +492,10 @@ nav{
    color: var(--second-color);
    text-decoration: .05em underline dotted var(--second-color);
    text-underline-offset: .5rem;
+}
+
+#project-a:hover {
+   color: var(--color-a);
 }
 
 .div-button {
@@ -635,11 +638,19 @@ button:hover .button-text a{
 
 footer {
    display: flex;
-   justify-content: center;
-   text-align: center;
+   justify-content: start;
+   text-align: start;
    position: relative;
    color: #fff;
    font-weight: 300;
+}
+
+.bx-heart {
+   margin: .2em .3em 0 .3em;
+   padding: 0;
+   width: 16px;
+   height: 16px;
+   position: relative;
 }
 
 h1::selection
@@ -662,12 +673,12 @@ h2::selection
       display: grid;
       grid-template-columns: 1fr;
       grid-template-areas: 
-      'image1'
       'content1'
-      'image2'
+      'image1'
       'content2'
-      'image3'
+      'image2'
       'content3'
+      'image3'
       ;
       place-items: center;
    }
@@ -751,6 +762,10 @@ h2::selection
       height: 270px;
       width: 480px;
    }
+   footer {
+      text-align: start;
+      padding-right: 1em;
+   }
 }
 
 @media only screen and (max-width: 640px) {
@@ -791,6 +806,13 @@ h2::selection
       font-size: 1.2rem;
       text-align: center;
       padding: 0 1rem;
+   }
+   footer {
+      text-align: start;
+      padding-right: 1.5em;
+   }
+   .bx-heart {
+      position: absolute;
    }
 }
 
@@ -898,12 +920,12 @@ h2::selection
 
    .div-button {
       padding: 10%;
-      padding-top: 5%;
+      padding-top: 20%;
    } 
 
    footer {
       text-align: start;
-      padding-right: .9em;
+      padding-right: 1.5em;
    }
 }
 

@@ -10,15 +10,41 @@
  #section-portfolio h1 {
     color: var(--second-color);
     padding-top: 3rem;
-    font-size: 4.5rem;
+    font-size: 5rem;
     text-decoration: .05em underline dotted var(--second-color);
-    text-underline-offset: 1.5rem;
+    text-underline-offset: 1.4rem;
     text-transform: capitalize;
     text-align: center;
  }
+
+ #section-portfolio h2 {
+   color: var(--second-color);
+   font-size: 3rem;
+   text-underline-offset: 1.5rem;
+   text-transform: capitalize;
+   text-align: center;
+   padding-top: 2rem;
+ }
  
+ .web-project {
+   padding: 0 50% 5% 50%;
+   display: grid;
+   width: 100%;
+   row-gap: 50px;
+   justify-content: center;
+   margin: auto;
+   grid-template-columns: repeat(2, 1fr);
+   place-items: center;
+   grid-template-areas:
+   'content6'
+   'image6'
+   'image8'
+   'image7'
+   'image9';
+ }
+
  .work-projects {
-    padding: 7rem;
+    padding: 5rem 7rem 2rem 7rem;
     display: grid;
     width: 100%;
     gap: 40px;
@@ -26,9 +52,11 @@
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    'image1 image2'
-    'image3 image4'
-    'image5 image6';
+    'image1 content1'
+    'image2 content2'
+    'image3 content3'
+    'image4 content4'
+    'image5 content5';
     place-items: center;
  }
  
@@ -39,8 +67,6 @@
     background-position-y: center;
     border-radius: 30px;
     box-shadow: 0 6px 15px .1px var(--bd-dark);
-    height: 500px;
-    width: 500px;
  }
  
  .work-img::after {
@@ -63,66 +89,206 @@
  .image-one {
     grid-area: image1;
     background-image: url(/image/babeczka-3.png);
+    height: 500px;
+    width: 500px;
  }
  
  .image-two {
     grid-area: image2;
     background-image: url(/image/dog_4.png);
+    height: 500px;
+    width: 500px;
  }
  
  .image-three {
     grid-area: image3;
     background-image: url(/image/handbag_8.png);
+    height: 500px;
+    width: 500px;
  }
  
  .image-four {
     grid-area: image4;
     background-image: url(/image/mikrofon_blender2.png);
+    height: 500px;
+    width: 500px;
  }
  
  .image-five {
     grid-area: image5;
-    background-image: url(/image/lancuch.png);
+    background-image: url(/image/ścianka.png);
+    height: 700px;
+    width: 500px;
  }
  
  .image-six {
+   height: 850px;
+   width: 500px;
     grid-area: image6;
-    background-image: url(/image/ścianka_5.png);
+    background-image: url(/image/screen-tel.jpg);
+    
  }
 
+ .image-seven {
+   grid-area: image7;
+   background-image: url(/image/laptop.png);
+   height: 500px;
+   width: 1100px;
+}
+
+.image-eight {
+   grid-area: image8;
+   background-image: url(/image/screen-tel-light.jpg);
+   height: 850px;
+    width: 500px;
+}
+
+.image-nein {
+   grid-area: image9;
+   background-image: url(/image/laptop-light.png);
+   height: 500px;
+   width: 1100px;
+}
+
+ .content-1 {
+   grid-area: content1;
+}
+
+.content-2 {
+   grid-area: content2;
+}
+
+.content-3 {
+   grid-area: content3;
+}
+
+.content-4 {
+   grid-area: content4;
+}
+
+.content-5 {
+   grid-area: content5;
+}
+
+.content-6 {
+   grid-area: content6;
+}
+
+.project-descriptionOne {
+   padding: 2rem;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 800;
+   color: var(--second-color);
+}
+
+.project-descriptionTwo {
+   padding: 2rem;
+   text-align: center;
+   color: var(--second-color);
+   font-size: 1rem;
+   font-weight: 400;
+}
+
 @media only screen and (max-width: 1300px) {
-    .work-img {
+    .image-one, .image-two, .image-three, .image-four {
         height: 400px;
         width: 400px;
      }
+   .image-five {
+      height: 500px;
+      width: 400px;
+   }
+   .image-six, .image-eight {
+      height: 750px;
+      width: 450px;
+   }
+   .image-seven, .image-nein {
+      height: 430px;
+      width: 950px;
+   }
 } 
+
+@media only screen and (max-width: 1000px) {
+   .image-seven, .image-nein {
+      height: 350px;
+      width: 730px;
+   }
+}
 
 @media only screen and (max-width: 900px) {
     .work-projects {
+        padding-bottom: 5rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
+        'content1'
         'image1'
+        'content2'
         'image2'
+        'content3'
         'image3'
+        'content4'
         'image4'
-        'image5'
-        'image6'
-        ;
+        'content5'
+        'image5';
         place-items: center;
     }
 }
 
+@media only screen and (max-width: 740px) {
+   .image-seven, .image-nein {
+      height: 250px;
+      width: 550px;
+   }
+   .image-six, .image-eight {
+      height: 500px;
+      width: 300px;
+   }
+}
+
+@media only screen and (max-width: 570px) {
+   .image-seven, .image-nein {
+      height: 200px;
+      width: 430px;
+   }
+}
+
 @media only screen and (max-width: 540px) {
-    .work-img {
-        height: 300px;
-        width: 300px;
-    }
+   .image-one, .image-two, .image-three, .image-four {
+      height: 300px;
+      width: 300px;
+   }
+   .image-five {
+      height: 400px;
+      width: 300px;
+   }
+
+   #section-portfolio h1 {
+      font-size: 4rem;
+   }
+   
+   #section-portfolio h2 {
+      font-size: 2.7rem;
+      padding: 1rem;
+   }
+}
+
+
+@media only screen and (max-width: 450px) {
+   .image-seven, .image-nein {
+      height: 160px;
+      width: 320px;
+   }
 }
 
 @media only screen and (max-width: 380px) {
-    .work-img {
-        height: 200px;
-        width: 200px;
-    }
+   .image-one, .image-two, .image-three, .image-four {
+      height: 300px;
+      width: 300px;
+   }
+ .image-five {
+    height: 400px;
+      width: 300px;
+ }
 }
