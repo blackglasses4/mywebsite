@@ -764,7 +764,7 @@ h2::selection
    }
    footer {
       text-align: start;
-      padding-right: 1em;
+      padding-right: 2em;
    }
 }
 
@@ -809,7 +809,7 @@ h2::selection
    }
    footer {
       text-align: start;
-      padding-right: 1.5em;
+      padding-right: 3em;
    }
    .bx-heart {
       position: absolute;
@@ -823,6 +823,11 @@ h2::selection
       padding: 3rem .9rem 0 .9rem;
    }
    
+   .work-img-wrapper::after {
+      content: '';
+      background-color: rgba(0, 232, 58, 0);
+   }
+
    #section-welcome  h1 {
       font-size: 2.7rem;
    }
@@ -869,7 +874,7 @@ h2::selection
    }
 
    .contact-local h2 {
-      padding-right: 2rem;
+      padding-right: .2rem;
    }
 
    .contact-links p a {
@@ -925,7 +930,7 @@ h2::selection
 
    footer {
       text-align: start;
-      padding-right: 1.5em;
+      padding-right: 3em;
    }
 }
 
