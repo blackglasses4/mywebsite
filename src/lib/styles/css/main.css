@@ -1,0 +1,39 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --darknight: hsl(0, 0%, 5%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
+  --font: Raleway, sans-serif;
+  --font-additional: Open Sans, sans-serif;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --darknight: hsl(0, 0%, 5%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
+  --font: Raleway, sans-serif;
+  --font-additional: Open Sans, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "MyHelvetica";
+  src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"), url("MgOpenModernaBold.ttf");
+  font-weight: bold;
+}
+body {
+  background-color: hsl(0, 0%, 5%);
+}/*# sourceMappingURL=main.css.map */

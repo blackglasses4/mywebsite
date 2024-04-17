@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@use './abstracts/variables' as v;
+//abstract
+@import 
+'abstracts/functions',
+'abstracts/mixins',
+'abstracts/variables';
+
+//components
+//layout
+@import 
+'layout/footer',
+'layout/header';
+
+//pages
+@import
+'pages/home';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-family: v.$font;
+    text-decoration: none;
+    list-style-type: none;
+ }
+  
+@font-face {
+    font-family: "MyHelvetica";
+    src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"),
+        url("MgOpenModernaBold.ttf");
+    font-weight: bold;
+}
+  
+body {
+    background-color: $darknight;
+}
+ 

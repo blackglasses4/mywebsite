@@ -1,0 +1,80 @@
+<script>
+	import '$lib/styles/css/main.css';
+	// import '$lib/styles/about.css';
+	// import '$lib/styles/ofert.css';
+	// import '$lib/styles/contact.css';
+	import { page } from '$app/stores';
+	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
+	import { afterNavigate } from '$app/navigation';
+	import LangSwitch from '$lib/components/LangSwitch.svelte';
+
+	let showMenu = false;
+
+	afterNavigate(navigation => {
+		showMenu = false;
+	});
+
+	let lang = 'en';
+</script>
+
+<header id="header">
+		<!-- <a class="logo-a" rel="internal" href="/{lang}/"><img class="logo" src="/image/logo.png" alt="company logo Telmech Sp. z.o.o."></a> -->
+		
+		<div class="lang-theme">
+			<ThemeSwitch />
+			<LangSwitch language={lang}/>
+		</div>
+
+		<input class="side-menu" type="checkbox" id="side-menu" bind:checked={showMenu} />
+		<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+		<nav class="nav">
+			<ul class="menu">
+				<!-- <li><a href="/{lang}/" id="home" rel="internal" class:active={$page.url.pathname == '/'+lang+'/'}>Home</a></li>
+				<li><a href="/{lang}/offer/" id="offer" rel="internal" class:active={$page.url.pathname == '/'+lang+'/offer/'}>Offer</a></li>
+				<li><a href="/{lang}/about/" id="about" rel="internal" class:active={$page.url.pathname == '/'+lang+'/about/'}>About</a></li>
+				<li><a href="/{lang}/contact/" id="contact" rel="internal" class:active={$page.url.pathname == '/'+lang+'/contact/'}>Contact</a></li> -->
+			</ul>
+		</nav>
+</header>
+
+<main>
+	<slot />
+</main>
+
+<footer>
+	<div class="footer-areas">
+		<div class="footer-area footer-left">
+			<!-- <img src="/image/logo.png" alt="company logo Telmech Sp. z.o.o."> -->
+			<div class="footer-address">
+				<p>ul. Bolesława Chrobrego 6</p>
+				<p>64-500 Szamotuły</p>
+				<p>Poland</p>
+			</div>
+			<div class="footer-nip">
+				<p>NIP: 781&ndash;00&ndash;64&ndash;886</p>
+				<p>REGON: 630226676</p>
+			</div>
+			<div class="footer-app-icon">
+				<p><a target="_blank" aria-label="Anchor to transfer to the company Facebook page" href="https://www.facebook.com/TelmechSpolka" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a></p>
+				<!-- <p><a target="_blank" aria-label="Anchor to transfer to the company Linkedln page" href="/"><i class='bx bxl-linkedin-square' ></i></a></p> -->
+				<p><a target="_blank" aria-label="Anchor to transfer to the company Instagram page" href="https://www.instagram.com/telmechspolkazoo/" rel="noopener noreferrer"><i class='bx bxl-instagram-alt'></i></a></p>
+			</div>
+		</div>
+		<div class="footer-area footer-center">
+			<h1><a class="footer-a" href="/{lang}/offer" rel="noopener noreferrer internal">Offer</a></h1>
+			<p><a class="p-a" href="/{lang}/offer#details" rel="noopener noreferrer internal">Details and structures made of thin sheets</a></p>
+			<p><a class="p-a" href="/{lang}/offer#constructions" rel="noopener noreferrer internal">Welded and welded structures</a></p>
+			<p><a class="p-a" href="/{lang}/offer#locksmithWorks" rel="noopener noreferrer internal">Precision locksmithing and assembly work</a></p>
+			<p><a class="p-a" href="/{lang}/offer#galvanicCoatings" rel="noopener noreferrer internal">Galvanization and powder coating</a></p>
+		</div>
+		<div class="footer-area footer-right">
+			<h1><a class="footer-a" href="/{lang}/contact" rel="noopener noreferrer internal">Contact</a></h1>
+			<p>Sales Office: +48 61 868 03 83</p>
+			<p>Secretariat: +48 61 868 59 49</p>
+		</div>
+	</div>
+	<div class="footer-text">
+		<p>&copy; 2024 by Telmech Sp. z.o.o. All rights reserved &vert; Designed by <a target="_blank" href="https://adrianna.mooo.com/" rel="noopener noreferrer">Adrianna Pawłowska</a></p>
+	</div>
+</footer>

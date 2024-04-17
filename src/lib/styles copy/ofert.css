@@ -1,0 +1,559 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+ }
+  
+
+section.s-of-picture {
+    height: 40dvh;
+    position: relative;
+    background-color: var(--first-blue);
+}
+
+.of-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5em;
+    z-index: 1;
+}
+
+.of-title h1{
+    font-size: 5em;
+    color: var(--bd-light);
+    padding-bottom: .6em;
+}
+
+img.of-baner-one {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    z-index: 0;
+}
+
+/* details */
+
+section.s-of-details,
+section.s-of-l-construction {
+    background-color: var(--first-color);
+}
+
+ .of-img-details,
+ .of-img-housing,
+ .of-img-l-construct,
+ .of-img-h-construct{
+    object-fit: cover;
+    filter: brightness(90%);
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    transition: all .2s;
+}
+
+.of-img-housing
+{
+    max-height: 600px;
+}
+
+.of-img-h-construct {
+    max-height: 900px;
+}
+
+.of-img-five{
+    object-position: left;
+}
+
+.s-of-details .details-area {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'd-five d-one d-one d-one d-two'
+    'd-five d-four d-four d-three d-three';
+    gap: 1em;
+    padding: 2em;
+}
+
+.details-one {
+    grid-area: d-one;
+    align-self: center;
+    padding:  0 3em;
+}
+
+.details-two {
+    grid-area: d-two;
+}
+
+.details-three {
+    grid-area: d-three;
+}
+
+.details-four {
+    grid-area: d-four;
+}
+
+.details-five {
+    grid-area: d-five;
+}
+
+.details-text h1,
+.l-construct-text h1{
+    color: var(--second-blue);
+    font-size: 3em;
+}
+
+.details-text p,
+.l-construct-text p {
+    color: var(--second-blue);
+    font-size: 1.2em;
+}
+
+/* construction */
+
+section.s-of-housing,
+section.s-of-h-construction {
+    background-color: var(--first-blue);
+}
+
+.s-of-housing .housing-areas {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'h-one h-one h-one'
+    'h-three h-three h-two';
+    gap: 1em;
+    padding: 2em;
+}
+
+.housing-one {
+    grid-area: h-one;
+    align-self: center;
+    padding:  0 3em;
+}
+
+.housing-two {
+    grid-area: h-two;
+}
+
+.housing-three {
+    grid-area: h-three;
+}
+
+.housing-four {
+    grid-area: h-four;
+}
+
+.housing-five {
+    grid-area: h-five;
+}
+
+.housing-text h1,
+.h-construct-text h1{
+    color: var(--bd-light);
+    font-size: 3em;
+}
+
+.housing-text p,
+.h-construct-text p{
+    color: var(--bd-light);
+    font-size: 1.2em;
+}
+
+/* Locksmith */
+
+.s-of-l-construction .l-construct-areas {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'lc-two lc-one lc-one lc-three'
+    'lc-four lc-four lc-five lc-five';
+    gap: 1em;
+    padding: 2em;
+}
+
+.l-construct-one {
+    grid-area: lc-one;
+    align-self: center;
+}
+
+.l-construct-two {
+    grid-area: lc-two;
+}
+
+.l-construct-three {
+    grid-area: lc-three;
+}
+
+.l-construct-four {
+    grid-area: lc-four;
+}
+
+.l-construct-five {
+    grid-area: lc-five;
+}
+
+.l-construct-text h1{
+    color: var(--second-blue);
+    font-size: 2.5em;
+}
+
+/* Galvatic */
+
+.s-of-h-construction .h-construct-areas {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'hc-five hc-six hc-one hc-one hc-one hc-one'
+    'hc-two hc-two hc-four hc-four hc-three hc-three';
+    gap: 1em;
+    padding: 2em;
+}
+
+.h-construct-one {
+    grid-area: hc-one;
+    align-self: center;
+}
+
+.h-construct-two {
+    grid-area: hc-two;
+}
+
+.h-construct-three {
+    grid-area: hc-three;
+}
+
+.h-construct-four {
+    grid-area: hc-four;
+}
+
+.h-construct-five {
+    grid-area: hc-five;
+}
+
+.h-construct-six {
+    grid-area: hc-six;
+}
+
+
+/* contact */
+
+section.s-of-contact {
+    height: auto;
+    position: relative;
+    background-color: var(--first-color);
+    text-align: center;
+    padding: 5em 25%;
+}
+
+section.s-o-contact {
+    padding: 5em 10%;
+}
+
+.s-of-contact h1{
+    font-size: 3em;
+    color: var(--second-blue);
+    padding-bottom: .1em;
+}
+
+.s-of-contact p{
+    font-size: 1.5em;
+    color: var(--second-blue);
+    padding-bottom: 2em;
+}
+
+.s-of-contact a{
+    cursor: pointer;
+    border: 0;
+    padding: .4em 1.3em;
+    border-radius: 1.625rem;
+    background-color: var(--second-blue);
+    color: var(--first-color);
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .2s;
+ }
+ 
+ .s-of-contact a:hover {
+    background-color: var(--opinion-one-c1);
+    color: var(--bd-light);
+    transition: all .2s;
+ }
+
+
+.s-o-ofert h1::selection,
+.s-o-ofert p::selection,
+.of-contact-area h1::selection,
+.housing-text h1::selection,
+.housing-text p::selection,
+.h-construct-text p::selection,
+.h-construct-text h1::selection{
+    color: var(--first-blue);
+    background-color: var(--bd-light);
+}
+
+.d-of-area p::selection,
+.s-of-description h1::selection,
+.details-text p::selection,
+.details-text h1::selection,
+.l-construct-text p::selection,
+.l-construct-text h1::selection,
+.s-of-contact h1::selection,
+.s-of-contact p::selection,
+.s-of-contact a::selection {
+    color: var(--bd-light);
+    background-color: var(--first-blue);
+}
+
+@media only screen and (max-width: 1508px) {
+    .housing-text h1{
+        font-size: 2.5em;
+    }
+    .housing-text p{
+        font-size: 1.1em;
+    }
+    .housing-one {
+        padding: 0 1em;
+    }
+    .l-construct-text h1{
+        font-size: 2.5em;
+    }
+    .l-construct-text p{
+        font-size: 1.1em;
+    }
+    .h-construct-text h1{
+        font-size: 2.5em;
+    }
+    .h-construct-text p{
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 1368px) {
+    .details-text h1{
+        color: var(--second-blue);
+        font-size: 2.7em;
+    }
+    .details-text p{
+        color: var(--second-blue);
+        font-size: 1.15em;
+    }
+    .details-one {
+        grid-area: d-one;
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 1094px) {
+    .s-of-details .details-area {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        'd-one d-one'
+        'd-two d-three'
+        'd-four d-five';
+        gap: 2em;
+        padding: 3em;
+    }
+    .details-text,
+    .housing-text,
+    .l-construct-text,
+    .h-construct-text  {
+        text-align: left;
+    }
+    .details-one,
+    .housing-one  {
+        padding: 0;
+    }
+    .s-of-housing .housing-areas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        'h-one h-one'
+        'h-two h-three';
+        gap: 2em;
+        padding: 3em;
+    }
+    .s-of-l-construction .l-construct-areas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        'lc-one lc-one'
+        'lc-two lc-three'
+        'lc-four lc-five';
+        gap: 2em;
+        padding: 3em;
+    }
+    .s-of-h-construction .h-construct-areas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        'hc-one hc-one'
+        'hc-two hc-three'
+        'hc-four hc-five'
+        'hc-six hc-six';
+        gap: 2em;
+        padding: 3em;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .of-contact-area h1{
+        font-size: 2.5em;
+        padding: .5em;
+    }
+    
+    .of-contact-area a{
+        font-size: 1.2em;
+        margin: 0 .5em;
+    }
+
+    .of-contact-areas {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        gap: 1em;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .of-contact-text {
+        padding: 5em 0;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .d-ofert-areas {
+        justify-items: center;
+    }
+
+    .details-text p,
+    .housing-text p,
+    .l-construct-text p,
+    .h-construct-text p
+    {
+        padding: 0 1em;
+    }
+
+    .details-text h1,
+    .housing-text h1,
+    .l-construct-text h1,
+    .h-construct-text h1 {
+        padding: .5em 0 .1em .4em;
+    }
+
+    .of-img-details,
+    .of-img-housing,
+    .of-img-l-construct,
+    .of-img-h-construct{
+        height: 100%;
+        max-height: 700px;
+        max-width: 100%;
+}
+
+.of-img-h-construct {
+    max-height: 1000px;
+}
+
+    .s-of-details .details-area {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'd-one'
+        'd-two'
+        'd-three'
+        'd-four'
+        'd-five';
+        gap: 2em;
+        padding: 0;
+        text-align: center;
+    }
+    .s-of-housing .housing-areas {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'h-one'
+        'h-two'
+        'h-three';
+        gap: 2em;
+        padding: 0;
+        text-align: center;
+    }
+    .s-of-l-construction .l-construct-areas {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'lc-one'
+        'lc-two'
+        'lc-three'
+        'lc-four'
+        'lc-five';
+        gap: 2em;
+        padding: 0;
+    }
+    .s-of-h-construction .h-construct-areas {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'hc-one'
+        'hc-two'
+        'hc-three'
+        'hc-four'
+        'hc-five'
+        'hc-six';
+        gap: 2em;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .details-text h1{
+        font-size: 2em;
+    }
+    .details-text p{
+        font-size: 1.15em;
+    }
+    .housing-text h1{
+        font-size: 2em;
+    }
+    .housing-text p{
+        font-size: 1.15em;
+    }
+    .l-construct-text h1{
+        font-size: 2em;
+    }
+    .l-construct-text p{
+        font-size: 1.15em;
+    }
+    .h-construct-text h1{
+        font-size: 2em;
+    }
+    .h-construct-text p{
+        font-size: 1.15em;
+    }
+
+    .details-text p,
+    .housing-text p,
+    .l-construct-text p,
+    .h-construct-text p
+    {
+        padding: 0 .9em;
+    }
+
+    .details-text h1,
+    .housing-text h1,
+    .l-construct-text h1,
+    .h-construct-text h1 {
+        padding: .5em 0 .1em .5em;
+    }
+}
