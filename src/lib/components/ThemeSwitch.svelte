@@ -19,7 +19,7 @@
     }
 </script>
 
-<a class="theme-switch secondary" aria-label="Theme switch" href="." on:click|preventDefault={() => theme = nextTheme}>
+<a class="header__theme-switch secondary" aria-label="Theme switch" href="." on:click|preventDefault={() => theme = nextTheme}>
 {#if theme == 'light'}
     <svg width={iconSize} height={iconSize} fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="5"/>

@@ -42,29 +42,29 @@ $font-title: 10em; //160px
 
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-  $theme-dominant-light: hsl(0, 0%, 100%);
-  $theme-dominant-dark: hsl(0, 0%, 5%);
-  $darkgrey: hsl(0, 0%, 13%);
-  $lightgreen: hsl(146, 97%, 23%);
-  $darkgreen: hsl(144, 96%, 10%);
+  --theme-dominant-light: hsl(0, 0%, 100%);
+  --theme-dominant-dark: hsl(0, 0%, 5%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
 }
 
 @media only screen and (prefers-color-scheme: dark) {
    :root:not([data-theme]) {
-    $theme-dominant-light: hsl(0, 0%, 5%);
-    $theme-dominant-dark: hsl(0, 0%, 100%);
-    $darkgrey: hsl(0, 0%, 13%);
-    $lightgreen: hsl(146, 97%, 23%);
-    $darkgreen: hsl(144, 96%, 10%);
+    --theme-dominant-light: hsl(0, 0%, 5%);
+    --theme-dominant-dark: hsl(0, 0%, 100%);
+    --darkgrey: hsl(0, 0%, 13%);
+    --lightgreen: hsl(146, 97%, 23%);
+    --darkgreen: hsl(144, 96%, 10%);
    }
 }
 
 [data-theme="dark"] {
-  $theme-dominant-light: hsl(0, 0%, 5%);
-  $theme-dominant-dark: hsl(0, 0%, 100%);
-  $darkgrey: hsl(0, 0%, 13%);
-  $lightgreen: hsl(146, 97%, 23%);
-  $darkgreen: hsl(144, 96%, 10%);
+  --theme-dominant-light: hsl(0, 0%, 5%);
+  --theme-dominant-dark: hsl(0, 0%, 100%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
 }
 
 //responsive

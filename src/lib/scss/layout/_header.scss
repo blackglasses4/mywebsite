@@ -1,0 +1,130 @@
+@import '../abstracts/variables';
+
+.header {
+    background-color: var(--theme-dominant-light);
+    position: static;
+    padding: .5em;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 2;
+    border-bottom: 2px solid var(--lightgreen);
+    @include flex-center(space-between);
+
+    &__theme-switch {
+        color: var(--theme-dominant-dark);
+        @include transition;
+        padding: 0 1em;
+
+        &:hover {
+            @include transition;
+            color: var(--lightgreen);
+        }
+    }
+
+    &__theme {
+        @include flex-center(center);
+        text-align: center;
+    }
+
+    &__logo {
+        margin: 0;
+        padding: 0;
+        padding-left: 2%;
+        color: var(--theme-dominant-dark);
+    }
+}
+
+.nav {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+
+    &__menu {
+        display: block;
+        position: relative;
+
+        li {
+            padding-right: 2em;
+            display: inline-block;
+        }
+
+        a {
+            display: block;
+            padding: 1.5em .5em 1em .5em;
+            font-size: 1rem; 
+            color: var(--theme-dominant-dark);
+            letter-spacing: .04rem;
+            @include transition;
+
+            &:hover {
+                color: var(--lightgreen);
+                @include transition;
+            }
+
+            &:active {
+                color: var(--lightgreen);
+            }
+        }
+    }
+}
+
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 0 2em .3em 1em;
+
+    &__line {
+        background: var(--theme-dominant-dark);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 20px;
+
+        &::before, &::after {
+            background: var(--theme-dominant-dark);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+        }
+
+        &::before {
+            top: 5px;
+            width: 50%;
+            right: 0;
+        }
+
+        &::after {
+            top: -5px;
+            width: 50%;
+        }
+    }
+}
+
+input.side-menu {
+    display: none;
+
+    &:checked ~ nav {
+        max-height: 100%;
+    }
+
+    &:checked ~ .hamb .hamb__line {
+        background: transparent;
+
+        &::before {
+            width: 100%;
+            transform: rotate(-45deg);
+            top:0;
+        }
+
+        &::after {
+            width: 100%;
+            transform: rotate(45deg);
+            top:0;
+        }
+    }
+}

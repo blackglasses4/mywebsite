@@ -17,7 +17,7 @@
 	let lang = 'pl';
 </script>
 
-<header id="header">
+<header class="header" id="header">
 		<a class="header__logo" rel="internal" href="/{lang}/">Adrianna Pawłowska</a>
 		
 		<div class="header__theme">
@@ -26,7 +26,7 @@
 		</div>
 
 		<input class="side-menu" type="checkbox" id="side-menu" bind:checked={showMenu} />
-		<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+		<label class="hamb" for="side-menu"><span class="hamb__line"></span></label>
 
 		<nav class="nav">
 			<ul class="nav__menu">

@@ -10,12 +10,15 @@
 //     @include prefix(transform, rotate(90deg), ('webkit', 'ms'));
 //   }
 
-@mixin flex-center { //@include flex-center;
+@mixin flex-center($justify) { //@include flex-center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: $justify;
 }
 
+@mixin transition {
+  transition: all .2s;
+}
 
 @mixin input-placeholder {
 	&.placeholder { @content; }
