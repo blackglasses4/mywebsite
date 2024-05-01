@@ -1,0 +1,29 @@
+.section__welcome {
+    position: relative;
+    z-index: -1;
+    height: 92dvh;
+    @include flex-center(center);
+
+    &-content {
+        text-align: center;
+
+        p, h1 {
+            color: var(--theme-dominant-dark);
+        }
+
+        p {
+            font-size: clamp(1em, 0.5em + 1vw, 2rem);
+            padding: 0.3em;
+        }
+
+        h1 {
+            font-size: clamp(1rem, 1rem + 6vw, 10rem);
+            
+            .h1_green {
+                color: var(--lightgreen);
+            }
+        }
+
+    }
+}
+

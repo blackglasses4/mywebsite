@@ -22,7 +22,7 @@
 		
 		<div class="lang-theme">
 			<ThemeSwitch />
-			<LangSwitch language={lang}/>
+			<LangSwitch languageCode={lang}/>
 		</div>
 
 		<input class="side-menu" type="checkbox" id="side-menu" bind:checked={showMenu} />

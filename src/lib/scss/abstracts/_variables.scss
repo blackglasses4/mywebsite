@@ -3,13 +3,16 @@ $darknight: hsl(0, 0%, 5%);
 $darkgrey: hsl(0, 0%, 13%);
 $lightgreen: hsl(146, 97%, 23%);
 $darkgreen: hsl(144, 96%, 10%);
+$fiolet: hsl(251, 57%, 45%);
+$dominant-light: rgb(8 8 7/var(--tw-bg-opacity));
+$dominant-light: rgb(232 232 227/var(--tw-bg-opacity));
 
 //font-family
 $font: "Raleway", sans-serif;
 $font-additional: "Open Sans", sans-serif;
 
 //font sizes
-$font-body: 1em; //16px body
+$font-text: 1em; //16px text
 $font-h1-lg: 3em; //48px
 $font-h1-md: 2.25em; //36px
 $font-h1-sm: 2em; //32px
@@ -34,6 +37,7 @@ $font-title: 10em; //160px
   --darkgrey: #{$darkgrey};
   --lightgreen: #{$lightgreen};
   --darkgreen: #{$darkgreen};
+  --fiolet: #{$fiolet};
 
   //font-family
   --font: #{$font};
@@ -68,11 +72,11 @@ $font-title: 10em; //160px
 }
 
 //responsive
-$breakpoints: (
-  'medium': (min-width: 800px),
-  'large': (min-width: 1000px),
-  'huge': (min-width: 1200px),
-);
+// $breakpoints: (
+//   'medium': (min-width: 800px),
+//   'large': (min-width: 1000px),
+//   'huge': (min-width: 1200px),
+// );
 
 $breakpoints: (
     "phone":        400px,

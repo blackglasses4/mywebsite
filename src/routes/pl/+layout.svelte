@@ -22,11 +22,12 @@
 		
 		<div class="header__theme">
 			<ThemeSwitch />
-			<LangSwitch language={lang}/>
+			<LangSwitch languageCode={lang}/>
 		</div>
 
 		<input class="side-menu" type="checkbox" id="side-menu" bind:checked={showMenu} />
 		<label class="hamb" for="side-menu"><span class="hamb__line"></span></label>
+		
 
 		<nav class="nav">
 			<ul class="nav__menu">
@@ -35,6 +36,11 @@
 				<li><a href="/{lang}/about/" id="about" rel="internal" class:active={$page.url.pathname == '/'+lang+'/about/'}>O nas</a></li>
 				<li><a href="/{lang}/contact/" id="contact" rel="internal" class:active={$page.url.pathname == '/'+lang+'/contact/'}>Kontakt</a></li>
 			</ul>
+			<div class="nav__icon">
+				<p><a target="_blank" aria-label="Anchor to transfer to the company Facebook page" href="https://www.facebook.com/TelmechSpolka" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a></p>
+				<p><a target="_blank" aria-label="Anchor to transfer to the company Instagram page" href="https://www.instagram.com/telmechspolkazoo/" rel="noopener noreferrer"><i class='bx bxl-instagram-alt'></i></a></p>
+				<p><a target="_blank" aria-label="Anchor to transfer to the company Instagram page" href="https://www.instagram.com/telmechspolkazoo/" rel="noopener noreferrer"><i class='bx bxl-instagram-alt'></i></a></p>
+			</div>
 		</nav>
 </header>
 

@@ -1,13 +1,10 @@
 <script lang="ts">
 	import { supportedLanguages } from "$lib/i18n/config";
-
-    export let language : string;
+    export let languageCode: string;
 </script>
 
-<div class="lang">
-{#each supportedLanguages.filter(l => l.code == language) as lang}
-    <a href="/{lang.linkLocal}/" title={lang.name} on:click={() => localStorage.setItem('preferredLanguage', lang.linkLocal)}>
-        <img src="/flag/32/{lang.code}.png" alt={lang.name} />
-    </a>
+<div>
+{#each supportedLanguages.filter(language => language.code == languageCode) as language}
+    <a href="/{language.nextLangCode}/" title={language.name} on:click={() => localStorage.setItem('preferredLanguage', language.nextLangCode)}><img src="/flag/32/{language.code}.png" alt={language.name} /></a>
 {/each}
 </div>

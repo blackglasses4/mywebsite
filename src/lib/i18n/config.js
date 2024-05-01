@@ -2,12 +2,13 @@ const supportedLanguages = [
     {
         code: 'pl',
         name: 'Polski',
-        linkLocal: 'en'
+        nextLangCode: 'en',
+
     },
     {
         code: 'en',
         name: 'English',
-        linkLocal: 'pl'
+        nextLangCode: 'pl',
     }
 ]
 

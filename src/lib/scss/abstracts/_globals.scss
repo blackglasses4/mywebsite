@@ -12,7 +12,8 @@ html {
     font-family: v.$font;
     text-decoration: none;
     list-style-type: none;
- }
+    text-rendering: optimizeLegibility;
+}
   
 @font-face {
     font-family: "MyHelvetica";
@@ -25,9 +26,28 @@ html {
     box-sizing: inherit;
 }
 
+svg {
+    height: 0;
+    position: fixed;
+}
+
 body {
-    background-color: var(--theme-dominant-light);
+    //--tw-bg-opacity: 1;
+    background: rgb(232 232 227/var(--tw-bg-opacity));
     margin: 0;
     padding: 0;
-    line-height: 1.3;
+    line-height: inherit;
+
+    &::before {
+        filter: url(#grainy);
+    }
+
+    &::before, &::after {
+        position: absolute;
+        z-index: 3023023023020;
+        content: "";
+        width: 100%;
+        height: 100%;
+        opacity: 20%;
+    }
 }
