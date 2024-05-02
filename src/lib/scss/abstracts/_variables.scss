@@ -4,8 +4,8 @@ $darkgrey: hsl(0, 0%, 13%);
 $lightgreen: hsl(146, 97%, 23%);
 $darkgreen: hsl(144, 96%, 10%);
 $fiolet: hsl(251, 57%, 45%);
-$dominant-light: rgb(8 8 7/var(--tw-bg-opacity));
-$dominant-light: rgb(232 232 227/var(--tw-bg-opacity));
+
+//$tw-bg-opacity: 1;
 
 //font-family
 $font: "Raleway", sans-serif;
@@ -46,6 +46,7 @@ $font-title: 10em; //160px
 
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
+  //--dominant-light: rgb(8 8 7/var(--tw-bg-opacity));
   --theme-dominant-light: hsl(0, 0%, 100%);
   --theme-dominant-dark: hsl(0, 0%, 5%);
   --darkgrey: hsl(0, 0%, 13%);
@@ -55,6 +56,7 @@ $font-title: 10em; //160px
 
 @media only screen and (prefers-color-scheme: dark) {
    :root:not([data-theme]) {
+    //--dominant-light: rgb(232 232 227/var(--tw-bg-opacity));
     --theme-dominant-light: hsl(0, 0%, 5%);
     --theme-dominant-dark: hsl(0, 0%, 100%);
     --darkgrey: hsl(0, 0%, 13%);
@@ -64,6 +66,7 @@ $font-title: 10em; //160px
 }
 
 [data-theme="dark"] {
+  //--dominant-light: rgb(232 232 227/var(--tw-bg-opacity));
   --theme-dominant-light: hsl(0, 0%, 5%);
   --theme-dominant-dark: hsl(0, 0%, 100%);
   --darkgrey: hsl(0, 0%, 13%);

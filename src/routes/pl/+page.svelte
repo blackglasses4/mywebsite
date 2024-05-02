@@ -17,4 +17,11 @@
         <p>zajmujący się tworzeniem unikalnych i inspirujących projektów</p>
     </div>
 </section>
+<section class="section__welcome">
+    <div class="section__welcome-content">
+        <p>Pełny pasji</p>
+        <h1>Freelance<br><span class="h1_green">Designer</span> & <span class="h1_green">Developer</span></h1>
+        <p>zajmujący się tworzeniem unikalnych i inspirujących projektów</p>
+    </div>
+</section>
 

@@ -48,10 +48,10 @@
 	<slot />
 </main>
 
-<footer>
+<!-- <footer>
 	<div class="footer-areas">
 		<div class="footer-area footer-left">
-			<!-- <img src="/image/logo.png" alt="Logo firmy Telmech Sp. z.o.o."> -->
+			//<img src="/image/logo.png" alt="Logo firmy Telmech Sp. z.o.o."> 
 			<div class="footer-address">
 				<p>ul. Bolesława Chrobrego 6</p>
 				<p>64-500 Szamotuły</p>
@@ -63,7 +63,7 @@
 			</div>
 			<div class="footer-app-icon">
 				<p><a target="_blank" aria-label="Anchor to transfer to the company Facebook page" href="https://www.facebook.com/TelmechSpolka" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a></p>
-				<!-- <p><a target="_blank" aria-label="Anchor to transfer to the company Linkedln page" href="/"><i class='bx bxl-linkedin-square' ></i></a></p> -->
+				//<p><a target="_blank" aria-label="Anchor to transfer to the company Linkedln page" href="/"><i class='bx bxl-linkedin-square' ></i></a></p
 				<p><a target="_blank" aria-label="Anchor to transfer to the company Instagram page" href="https://www.instagram.com/telmechspolkazoo/" rel="noopener noreferrer"><i class='bx bxl-instagram-alt'></i></a></p>
 			</div>
 		</div>
@@ -83,4 +83,4 @@
 	<div class="footer-text">
 		<p>&copy; 2024 by Telmech Sp. z.o.o. Wszelkie prawa zastrzeżone &vert; Wykonanie <a target="_blank" href="https://adrianna.mooo.com/" rel="noopener noreferrer">Adrianna Pawłowska</a></p>
 	</div>
-</footer>
+</footer> -->

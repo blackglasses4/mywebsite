@@ -1,3 +1,5 @@
+@import '../abstracts/variables';
+
 html {
     font-size: 100%;
     box-sizing: border-box;
@@ -26,28 +28,21 @@ html {
     box-sizing: inherit;
 }
 
-svg {
-    height: 0;
-    position: fixed;
-}
-
 body {
-    //--tw-bg-opacity: 1;
-    background: rgb(232 232 227/var(--tw-bg-opacity));
+    background: var(--theme-dominant-light);
     margin: 0;
     padding: 0;
     line-height: inherit;
+    position: relative;
 
     &::before {
         filter: url(#grainy);
-    }
-
-    &::before, &::after {
+        height: 0;
+        opacity: 20%;
         position: absolute;
-        z-index: 3023023023020;
+        z-index: -1;
         content: "";
         width: 100%;
         height: 100%;
-        opacity: 20%;
     }
 }
