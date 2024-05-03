@@ -29,6 +29,8 @@ html {
 }
 
 body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background: var(--theme-dominant-light);
     margin: 0;
     padding: 0;

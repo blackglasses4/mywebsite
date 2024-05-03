@@ -31,9 +31,8 @@
 
 		<nav class="nav">
 			<ul class="nav__menu">
-				<li><a href="/{lang}/" id="home" rel="internal" class:active={$page.url.pathname == '/'+lang+'/'}>Start</a></li>
 				<li><a href="/{lang}/offer/" id="offer" rel="internal" class:active={$page.url.pathname == '/'+lang+'/offer/'}>Oferta</a></li>
-				<li><a href="/{lang}/about/" id="about" rel="internal" class:active={$page.url.pathname == '/'+lang+'/about/'}>O nas</a></li>
+				<li><a href="/{lang}/#aboutme" id="about" rel="internal" class:active={$page.url.pathname == '/'+lang+'/about'}>O nas</a></li>
 				<li><a href="/{lang}/contact/" id="contact" rel="internal" class:active={$page.url.pathname == '/'+lang+'/contact/'}>Kontakt</a></li>
 			</ul>
 			<div class="nav__icon">

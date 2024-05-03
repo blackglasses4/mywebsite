@@ -13,6 +13,10 @@
 :root:not([data-theme=dark]) {
   --theme-dominant-light: hsl(0, 0%, 100%);
   --theme-dominant-dark: hsl(0, 0%, 5%);
+  --color-font: hsl(0, 0%, 15%);
+  --color-bg-selection: hsl(0, 0%, 15%);
+  --color-selection: hsl(0, 0%, 98%);
+  --color-font-grey: hsl(0, 0%, 21%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);
@@ -22,6 +26,10 @@
   :root:not([data-theme]) {
     --theme-dominant-light: hsl(0, 0%, 5%);
     --theme-dominant-dark: hsl(0, 0%, 100%);
+    --color-font: hsl(0, 0%, 98%);
+    --color-bg-selection: hsl(0, 0%, 98%);
+    --color-selection: hsl(0, 0%, 15%);
+    --color-font-grey: hsl(0, 0%, 80%);
     --darkgrey: hsl(0, 0%, 13%);
     --lightgreen: hsl(146, 97%, 23%);
     --darkgreen: hsl(144, 96%, 10%);
@@ -30,6 +38,10 @@
 [data-theme=dark] {
   --theme-dominant-light: hsl(0, 0%, 5%);
   --theme-dominant-dark: hsl(0, 0%, 100%);
+  --color-font: hsl(0, 0%, 98%);
+  --color-bg-selection: hsl(0, 0%, 98%);
+  --color-selection: hsl(0, 0%, 15%);
+  --color-font-grey: hsl(0, 0%, 80%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);
@@ -50,6 +62,10 @@
 :root:not([data-theme=dark]) {
   --theme-dominant-light: hsl(0, 0%, 100%);
   --theme-dominant-dark: hsl(0, 0%, 5%);
+  --color-font: hsl(0, 0%, 15%);
+  --color-bg-selection: hsl(0, 0%, 15%);
+  --color-selection: hsl(0, 0%, 98%);
+  --color-font-grey: hsl(0, 0%, 21%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);
@@ -59,6 +75,10 @@
   :root:not([data-theme]) {
     --theme-dominant-light: hsl(0, 0%, 5%);
     --theme-dominant-dark: hsl(0, 0%, 100%);
+    --color-font: hsl(0, 0%, 98%);
+    --color-bg-selection: hsl(0, 0%, 98%);
+    --color-selection: hsl(0, 0%, 15%);
+    --color-font-grey: hsl(0, 0%, 80%);
     --darkgrey: hsl(0, 0%, 13%);
     --lightgreen: hsl(146, 97%, 23%);
     --darkgreen: hsl(144, 96%, 10%);
@@ -67,6 +87,10 @@
 [data-theme=dark] {
   --theme-dominant-light: hsl(0, 0%, 5%);
   --theme-dominant-dark: hsl(0, 0%, 100%);
+  --color-font: hsl(0, 0%, 98%);
+  --color-bg-selection: hsl(0, 0%, 98%);
+  --color-selection: hsl(0, 0%, 15%);
+  --color-font-grey: hsl(0, 0%, 80%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);
@@ -87,6 +111,10 @@
 :root:not([data-theme=dark]) {
   --theme-dominant-light: hsl(0, 0%, 100%);
   --theme-dominant-dark: hsl(0, 0%, 5%);
+  --color-font: hsl(0, 0%, 15%);
+  --color-bg-selection: hsl(0, 0%, 15%);
+  --color-selection: hsl(0, 0%, 98%);
+  --color-font-grey: hsl(0, 0%, 21%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);
@@ -96,6 +124,10 @@
   :root:not([data-theme]) {
     --theme-dominant-light: hsl(0, 0%, 5%);
     --theme-dominant-dark: hsl(0, 0%, 100%);
+    --color-font: hsl(0, 0%, 98%);
+    --color-bg-selection: hsl(0, 0%, 98%);
+    --color-selection: hsl(0, 0%, 15%);
+    --color-font-grey: hsl(0, 0%, 80%);
     --darkgrey: hsl(0, 0%, 13%);
     --lightgreen: hsl(146, 97%, 23%);
     --darkgreen: hsl(144, 96%, 10%);
@@ -104,6 +136,10 @@
 [data-theme=dark] {
   --theme-dominant-light: hsl(0, 0%, 5%);
   --theme-dominant-dark: hsl(0, 0%, 100%);
+  --color-font: hsl(0, 0%, 98%);
+  --color-bg-selection: hsl(0, 0%, 98%);
+  --color-selection: hsl(0, 0%, 15%);
+  --color-font-grey: hsl(0, 0%, 80%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);
@@ -136,6 +172,8 @@ html {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background: var(--theme-dominant-light);
   margin: 0;
   padding: 0;
@@ -168,6 +206,10 @@ body::before {
 :root:not([data-theme=dark]) {
   --theme-dominant-light: hsl(0, 0%, 100%);
   --theme-dominant-dark: hsl(0, 0%, 5%);
+  --color-font: hsl(0, 0%, 15%);
+  --color-bg-selection: hsl(0, 0%, 15%);
+  --color-selection: hsl(0, 0%, 98%);
+  --color-font-grey: hsl(0, 0%, 21%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);
@@ -177,6 +219,10 @@ body::before {
   :root:not([data-theme]) {
     --theme-dominant-light: hsl(0, 0%, 5%);
     --theme-dominant-dark: hsl(0, 0%, 100%);
+    --color-font: hsl(0, 0%, 98%);
+    --color-bg-selection: hsl(0, 0%, 98%);
+    --color-selection: hsl(0, 0%, 15%);
+    --color-font-grey: hsl(0, 0%, 80%);
     --darkgrey: hsl(0, 0%, 13%);
     --lightgreen: hsl(146, 97%, 23%);
     --darkgreen: hsl(144, 96%, 10%);
@@ -185,6 +231,10 @@ body::before {
 [data-theme=dark] {
   --theme-dominant-light: hsl(0, 0%, 5%);
   --theme-dominant-dark: hsl(0, 0%, 100%);
+  --color-font: hsl(0, 0%, 98%);
+  --color-bg-selection: hsl(0, 0%, 98%);
+  --color-selection: hsl(0, 0%, 15%);
+  --color-font-grey: hsl(0, 0%, 80%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);
@@ -220,6 +270,14 @@ body::before {
   padding-left: 2%;
   color: var(--theme-dominant-dark);
 }
+.header__logo::-moz-selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.header__logo::selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
 
 .nav {
   display: block;
@@ -243,6 +301,14 @@ body::before {
   color: var(--theme-dominant-dark);
   letter-spacing: 0.04rem;
   transition: all 0.2s;
+}
+.nav__menu a::-moz-selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.nav__menu a::selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
 }
 .nav__menu a:hover {
   color: var(--lightgreen);
@@ -303,6 +369,16 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   width: 100%;
   transform: rotate(45deg);
   top: 0;
+}
+
+.langSwitch::-moz-selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+
+.langSwitch::selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
 }
 
 @media only screen and (min-width: 768px) {
@@ -394,15 +470,180 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   text-align: center;
 }
 .section__welcome-content p, .section__welcome-content h1 {
-  color: var(--theme-dominant-dark);
+  color: var(--color-font);
+}
+.section__welcome-content p::-moz-selection, .section__welcome-content h1::-moz-selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.section__welcome-content p::selection, .section__welcome-content h1::selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
 }
 .section__welcome-content p {
-  font-size: clamp(1em, 0.5em + 1vw, 2rem);
+  font-size: clamp(1em, 0.9em + 1.1vw, 2rem);
   padding: 0.3em;
 }
 .section__welcome-content h1 {
-  font-size: clamp(1rem, 1rem + 6vw, 10rem);
+  font-size: clamp(0.9rem, 0.9rem + 5vw, 11rem);
 }
 .section__welcome-content h1 .h1_green {
   color: var(--lightgreen);
+}
+.section__welcome-content h1 .h1_green::-moz-selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.section__welcome-content h1 .h1_green::selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+
+@media only screen and (max-width: 480px) {
+  .section__welcome {
+    height: 55svh;
+  }
+}
+:root {
+  --white: hsl(0, 0%, 100%);
+  --darknight: hsl(0, 0%, 5%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
+  --fiolet: hsl(251, 57%, 45%);
+  --font: Raleway, sans-serif;
+  --font-additional: Open Sans, sans-serif;
+}
+
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  --theme-dominant-light: hsl(0, 0%, 100%);
+  --theme-dominant-dark: hsl(0, 0%, 5%);
+  --color-font: hsl(0, 0%, 15%);
+  --color-bg-selection: hsl(0, 0%, 15%);
+  --color-selection: hsl(0, 0%, 98%);
+  --color-font-grey: hsl(0, 0%, 21%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --theme-dominant-light: hsl(0, 0%, 5%);
+    --theme-dominant-dark: hsl(0, 0%, 100%);
+    --color-font: hsl(0, 0%, 98%);
+    --color-bg-selection: hsl(0, 0%, 98%);
+    --color-selection: hsl(0, 0%, 15%);
+    --color-font-grey: hsl(0, 0%, 80%);
+    --darkgrey: hsl(0, 0%, 13%);
+    --lightgreen: hsl(146, 97%, 23%);
+    --darkgreen: hsl(144, 96%, 10%);
+  }
+}
+[data-theme=dark] {
+  --theme-dominant-light: hsl(0, 0%, 5%);
+  --theme-dominant-dark: hsl(0, 0%, 100%);
+  --color-font: hsl(0, 0%, 98%);
+  --color-bg-selection: hsl(0, 0%, 98%);
+  --color-selection: hsl(0, 0%, 15%);
+  --color-font-grey: hsl(0, 0%, 80%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
+}
+
+.section__aboutme {
+  height: auto;
+}
+.section__aboutme-areas {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "one" "two";
+  gap: 2em;
+  margin: 5em 2.5em;
+  justify-content: center;
+}
+.section__aboutme-areas .ab-one {
+  grid-area: one;
+  text-align: center;
+}
+.section__aboutme-areas .ab-two {
+  grid-area: two;
+  text-align: left;
+}
+.section__aboutme-area h1 {
+  font-size: clamp(1rem, 0.9rem + 2vw, 2.25rem);
+  font-weight: 500;
+  color: var(--color-font);
+  padding: 0 0em 1em 0em;
+}
+.section__aboutme-area h1::-moz-selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.section__aboutme-area h1::selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.section__aboutme-area h1 strong::-moz-selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.section__aboutme-area h1 strong::selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.section__aboutme-area p {
+  font-size: clamp(1em, 0.9em + 1.1vw, 2rem);
+  color: var(--color-font-grey);
+  padding: 0 1em 1em 0;
+}
+.section__aboutme-area p::-moz-selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.section__aboutme-area p::selection {
+  color: var(--color-selection);
+  background-color: var(--color-bg-selection);
+}
+.section__aboutme-area .aboutme-img {
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 1430px) {
+  .section__aboutme-areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "one two";
+    gap: 2em;
+    margin: 5em 2.5em;
+    justify-content: center;
+  }
+  .section__aboutme-areas .ab-one {
+    grid-area: one;
+  }
+  .section__aboutme-areas .ab-two {
+    grid-area: two;
+  }
+  .section__aboutme-area h1 {
+    font-size: 2.25em;
+  }
+  .section__aboutme-area p {
+    font-size: 1.5em;
+  }
+  .section__aboutme-area .aboutme-img {
+    width: 800px;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section__aboutme-areas {
+    margin: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */

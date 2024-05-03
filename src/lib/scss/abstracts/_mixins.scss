@@ -20,6 +20,13 @@
   transition: all .2s;
 }
 
+@mixin selection {
+  &::selection {
+    color: var(--color-selection);
+    background-color: var(--color-bg-selection);
+  }
+}
+
 @mixin input-placeholder {
 	&.placeholder { @content; }
 	&:-moz-placeholder { @content; }

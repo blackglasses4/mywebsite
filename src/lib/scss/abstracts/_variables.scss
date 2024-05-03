@@ -49,6 +49,10 @@ $font-title: 10em; //160px
   //--dominant-light: rgb(8 8 7/var(--tw-bg-opacity));
   --theme-dominant-light: hsl(0, 0%, 100%);
   --theme-dominant-dark: hsl(0, 0%, 5%);
+  --color-font: hsl(0, 0%, 15%);
+  --color-bg-selection: hsl(0, 0%, 15%);
+  --color-selection: hsl(0, 0%, 98%);
+  --color-font-grey: hsl(0, 0%, 21%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);
@@ -59,6 +63,10 @@ $font-title: 10em; //160px
     //--dominant-light: rgb(232 232 227/var(--tw-bg-opacity));
     --theme-dominant-light: hsl(0, 0%, 5%);
     --theme-dominant-dark: hsl(0, 0%, 100%);
+    --color-font: hsl(0, 0%, 98%);
+    --color-bg-selection: hsl(0, 0%, 98%);
+    --color-selection: hsl(0, 0%, 15%);
+    --color-font-grey: hsl(0, 0%, 80%);
     --darkgrey: hsl(0, 0%, 13%);
     --lightgreen: hsl(146, 97%, 23%);
     --darkgreen: hsl(144, 96%, 10%);
@@ -69,6 +77,10 @@ $font-title: 10em; //160px
   //--dominant-light: rgb(232 232 227/var(--tw-bg-opacity));
   --theme-dominant-light: hsl(0, 0%, 5%);
   --theme-dominant-dark: hsl(0, 0%, 100%);
+  --color-font: hsl(0, 0%, 98%);
+  --color-bg-selection: hsl(0, 0%, 98%);
+  --color-selection: hsl(0, 0%, 15%);
+  --color-font-grey: hsl(0, 0%, 80%);
   --darkgrey: hsl(0, 0%, 13%);
   --lightgreen: hsl(146, 97%, 23%);
   --darkgreen: hsl(144, 96%, 10%);

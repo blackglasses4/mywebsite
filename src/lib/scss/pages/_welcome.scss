@@ -8,22 +8,29 @@
         text-align: center;
 
         p, h1 {
-            color: var(--theme-dominant-dark);
+            color: var(--color-font);
+            @include selection;
         }
 
         p {
-            font-size: clamp(1em, 0.5em + 1vw, 2rem);
+            font-size: clamp(1em, 0.9em + 1.1vw, 2rem);
             padding: 0.3em;
         }
 
         h1 {
-            font-size: clamp(1rem, 1rem + 6vw, 10rem);
+            font-size: clamp(0.9rem, 0.9rem + 5vw, 11rem);
             
             .h1_green {
                 color: var(--lightgreen);
+                @include selection;
             }
         }
+    }
+}
 
+@media only screen and (max-width: #{map-get($breakpoints, 'phone-wide')}) {
+    .section__welcome {
+        height: 55svh;
     }
 }
 
