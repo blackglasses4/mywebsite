@@ -7,22 +7,21 @@
     &-content {
         text-align: center;
 
-        p, h1 {
-            color: var(--color-font);
-            @include selection;
-        }
-
         p {
             font-size: clamp(1em, 0.9em + 1.1vw, 2rem);
+            color: var(--color-font-grey);
             padding: 0.3em;
+            @include selection-dark;
         }
 
         h1 {
             font-size: clamp(0.9rem, 0.9rem + 5vw, 11rem);
-            
+            color: var(--theme-dominant-dark);
+            @include selection-dark;
+
             .h1_green {
                 color: var(--lightgreen);
-                @include selection;
+                @include selection-dark;
             }
         }
     }

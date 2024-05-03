@@ -20,10 +20,17 @@
   transition: all .2s;
 }
 
-@mixin selection {
+@mixin selection-dark {
   &::selection {
     color: var(--color-selection);
     background-color: var(--color-bg-selection);
+  }
+}
+
+@mixin selection-light {
+  &::selection {
+    background-color: $white;
+    color: $grey;
   }
 }
 

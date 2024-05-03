@@ -31,10 +31,10 @@
             font-weight: 500;
             color: var(--color-font);
             padding: 0 0em 1em 0em;
-            @include selection;
+            @include selection-dark;
 
             strong {
-                @include selection;
+                @include selection-dark;
             }
         }
 
@@ -42,7 +42,7 @@
             font-size: clamp(1em, 0.9em + 1.1vw, 2rem);
             color: var(--color-font-grey);
             padding: 0 1em 1em 0;
-            @include selection;
+            @include selection-dark;
         }
 
         .aboutme-img {
@@ -97,6 +97,10 @@
         &-areas {
             margin: 1em;
         }
+    }
+
+    .section__skill {
+        padding: 1em 1em;
     }
 }
 

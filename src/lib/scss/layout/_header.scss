@@ -36,7 +36,7 @@
         padding: 0;
         padding-left: 2%;
         color: var(--theme-dominant-dark);
-        @include selection;
+        @include selection-dark;
     }
 }
 
@@ -63,7 +63,7 @@
             color: var(--theme-dominant-dark);
             letter-spacing: .04rem;
             @include transition;
-            @include selection;
+            @include selection-dark;
 
             &:hover {
                 color: var(--lightgreen);
@@ -140,7 +140,7 @@ input.side-menu {
 }
 
 .langSwitch {
-    @include selection;
+    @include selection-dark;
 }
 
 @media only screen and (min-width: #{map-get($breakpoints, 'tablet')}) {  

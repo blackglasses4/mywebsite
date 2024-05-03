@@ -1,10 +1,10 @@
-$white: hsl(0, 0%, 100%);
+$white: hsl(0, 0%, 98%);
 $darknight: hsl(0, 0%, 5%);
 $darkgrey: hsl(0, 0%, 13%);
 $lightgreen: hsl(146, 97%, 23%);
 $darkgreen: hsl(144, 96%, 10%);
 $fiolet: hsl(251, 57%, 45%);
-
+$grey: hsl(0, 0%, 15%);
 //$tw-bg-opacity: 1;
 
 //font-family
@@ -38,6 +38,7 @@ $font-title: 10em; //160px
   --lightgreen: #{$lightgreen};
   --darkgreen: #{$darkgreen};
   --fiolet: #{$fiolet};
+  --grey: #{$grey};
 
   //font-family
   --font: #{$font};
