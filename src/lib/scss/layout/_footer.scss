@@ -25,6 +25,7 @@ footer {
     .footer__content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         h2 {
             font-size: clamp(1em, 0.9em + 3.2vw, 3.9rem);
@@ -34,14 +35,14 @@ footer {
         }
 
         a, p {
-            font-size: clamp(1em, 0.9em + 1.1vw, 1.5rem);
+            font-size: clamp(1em, 0.9em + 0.9vw, 1.5rem);
             color: $white;
             @include selection-light;
         }
 
         &-call p {
             margin: 0.5em 2em;
-            padding: 0.2em 0.1em;
+            padding: 0.4em 0.4em;
             border-radius: 50px;
             border: 2px solid $white;
             @include selection-dark;
@@ -119,6 +120,7 @@ footer {
 
             .footer-social {
                 @include flex-center(space-between);
+                flex-wrap: wrap;
                 
                 i{
                     padding-left: 0.5em;
@@ -132,6 +134,66 @@ footer {
                         @include transition;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: #{map-get($breakpoints, 'phablet')}) {
+    footer {
+        height: auto;
+        padding: 1em;
+
+        .footer__content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    
+            &-call p {
+                margin: 1em;
+                padding: 0.6em 0.7em;
+    
+                .footer-contact {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+    
+            &-nav p{
+                padding: 0.2em 0;
+                text-align: left;
+                position: relative;
+    
+                .footer-a {
+                    text-decoration: none;
+                    
+                    &::after {
+                        content: "";
+                        left: 0;
+                        max-width: 100%;
+                        width: 100%;
+                        transform-origin: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-social {
+        display: block;
+
+        i{
+            padding-left: 0.5em;
+            font-size: clamp(1em, 1em + 1.5vw, 1.8rem);
+            font-weight: 500;
+            color: $white;
+            @include selection-light;
+
+            &:hover {
+                color: $lightgreen;
+                @include transition;
             }
         }
     }

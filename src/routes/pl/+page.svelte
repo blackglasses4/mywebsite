@@ -60,10 +60,9 @@
                 <div class="projects__details-lang">
                     <div class="details-pages">
                         <div class="details-page">
-                            <i class='bx bx-world'></i>
                             <p><a target="_blank" aria-label="Anchor to be moved to the telmech site"
                             href="https://www.telmech.com.pl" rel="noopener noreferrer"
-                        >Website</a></p>
+                        ><i class='bx bx-world'></i></a></p>
                         </div>
                     </div>
                 </div>
@@ -87,16 +86,14 @@
                 <div class="projects__details-lang">
                     <div class="details-pages">
                         <div class="details-page">
-                            <i class='bx bx-world'></i>
                             <p><a target="_blank" aria-label="Anchor to be moved to the telmech site"
                             href="https://adrianna.mooo.com/"
-                            rel="noopener noreferrer" >Website</a></p>
+                            rel="noopener noreferrer" ><i class='bx bx-world'></i></a></p>
                         </div>
                         <div class="details-page">
-                            <i class='bx bxl-github' ></i>
                             <p><a target="_blank" aria-label="Anchor to transfer to the
                             company Facebook page" href="https://github.com/blackglasses4/mywebsite"
-                            rel="noopener noreferrer" >Source Code</a></p>
+                            rel="noopener noreferrer" ><i class='bx bxl-github' ></i></a></p>
                         </div>
                     </div>
                 </div>

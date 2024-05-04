@@ -53,8 +53,10 @@
 	<div class="footer__content">
 		<div class="footer__content-call">
 			<h2>Napisz do mnie!</h2>
-			<p><a href="mailto:adriannapx@gmail.com">adriannapx@gmail.com</a></p>
-			<p>+48 730 464 132</p>
+			<div class="footer-contact">
+				<p><a href="mailto:adriannapx@gmail.com">adriannapx@gmail.com</a></p>
+				<p>+48 730 464 132</p>
+			</div>
 		</div>
 		<div class="footer__content-nav">
 			<h2>Navigacja</h2>

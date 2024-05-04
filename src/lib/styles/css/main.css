@@ -281,6 +281,7 @@ footer hr {
 footer .footer__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 footer .footer__content h2 {
   font-size: clamp(1em, 0.9em + 3.2vw, 3.9rem);
@@ -296,7 +297,7 @@ footer .footer__content h2::selection {
   color: hsl(0, 0%, 15%);
 }
 footer .footer__content a, footer .footer__content p {
-  font-size: clamp(1em, 0.9em + 1.1vw, 1.5rem);
+  font-size: clamp(1em, 0.9em + 0.9vw, 1.5rem);
   color: hsl(0, 0%, 98%);
 }
 footer .footer__content a::-moz-selection, footer .footer__content p::-moz-selection {
@@ -309,7 +310,7 @@ footer .footer__content a::selection, footer .footer__content p::selection {
 }
 footer .footer__content-call p {
   margin: 0.5em 2em;
-  padding: 0.2em 0.1em;
+  padding: 0.4em 0.4em;
   border-radius: 50px;
   border: 2px solid hsl(0, 0%, 98%);
   text-align: center;
@@ -397,6 +398,7 @@ footer .footer__copysocial .footer__copy .footer-social {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 footer .footer__copysocial .footer__copy .footer-social i {
   padding-left: 0.5em;
@@ -417,6 +419,63 @@ footer .footer__copysocial .footer__copy .footer-social i:hover {
   transition: all 0.2s;
 }
 
+@media only screen and (max-width: 584px) {
+  footer {
+    height: auto;
+    padding: 1em;
+  }
+  footer .footer__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer .footer__content-call p {
+    margin: 1em;
+    padding: 0.6em 0.7em;
+  }
+  footer .footer__content-call p .footer-contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  footer .footer__content-nav p {
+    padding: 0.2em 0;
+    text-align: left;
+    position: relative;
+  }
+  footer .footer__content-nav p .footer-a {
+    text-decoration: none;
+  }
+  footer .footer__content-nav p .footer-a::after {
+    content: "";
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    transform-origin: left;
+  }
+  .footer-social {
+    display: block;
+  }
+  .footer-social i {
+    padding-left: 0.5em;
+    font-size: clamp(1em, 1em + 1.5vw, 1.8rem);
+    font-weight: 500;
+    color: hsl(0, 0%, 98%);
+  }
+  .footer-social i::-moz-selection {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 15%);
+  }
+  .footer-social i::selection {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 15%);
+  }
+  .footer-social i:hover {
+    color: hsl(146, 97%, 23%);
+    transition: all 0.2s;
+  }
+}
 @media only screen and (max-width: 480px) {
   .section__skill {
     padding: 5em 1em;
@@ -1139,23 +1198,20 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   text-align: center;
   padding: 0.5em 0 0 1em;
 }
-.section__project-content .projects__details-lang .details-pages .details-page a {
+.section__project-content .projects__details-lang .details-pages .details-page i {
   color: var(--color-font-grey);
 }
-.section__project-content .projects__details-lang .details-pages .details-page a::-moz-selection {
+.section__project-content .projects__details-lang .details-pages .details-page i::-moz-selection {
   color: var(--color-selection);
   background-color: var(--color-bg-selection);
 }
-.section__project-content .projects__details-lang .details-pages .details-page a::selection {
+.section__project-content .projects__details-lang .details-pages .details-page i::selection {
   color: var(--color-selection);
   background-color: var(--color-bg-selection);
 }
-.section__project-content .projects__details-lang .details-pages .details-page a:hover {
+.section__project-content .projects__details-lang .details-pages .details-page i:hover {
   color: hsl(146, 97%, 23%);
   transition: all 0.2s;
-}
-.section__project-content .projects__details-lang .details-pages .details-page i {
-  padding-bottom: 0;
 }
 
 @media only screen and (max-width: 480px) {
