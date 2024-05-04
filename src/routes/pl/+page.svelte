@@ -51,7 +51,7 @@
             <h2>Telmech</h2><hr>
             <div class="projects__details">
                 <div class="projects__details-lang">
-                    <p>UI Design &vert; Web Development <span class="green-data">2024</span></p>
+                    <p>Web Design &vert; Frontend Development <span class="green-data">2024</span></p>
                     <i class='bx bxl-html5'></i>
                     <i class='bx bxl-css3' ></i>
                     <i class='bx bxl-javascript'></i>
@@ -77,7 +77,7 @@
             <h2>Moja strona portfolio</h2><hr>
             <div class="projects__details">
                 <div class="projects__details-lang">
-                    <p>UI Design &vert; Web Development <span class="green-data">2024</span></p>
+                    <p>Web Design &vert; Frontend Development <span class="green-data">2024</span></p>
                     <i class='bx bxl-html5'></i>
                     <i class='bx bxl-css3' ></i>
                     <i class='bx bxl-sass' ></i>

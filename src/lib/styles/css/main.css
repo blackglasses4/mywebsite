@@ -260,7 +260,7 @@ footer {
   -o-border-image: linear-gradient(-135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)) 1 stretch;
      border-image: linear-gradient(-135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)) 1 stretch;
   border-image-slice: 1;
-  padding: 4em 2.5em 0em 2.5em;
+  padding: 3em 2.5em 0em 2.5em;
 }
 footer h1 {
   font-size: clamp(1rem, 1rem + 5vw, 5rem);
@@ -333,6 +333,26 @@ footer .footer__content-call p a:hover {
 footer .footer__content-nav p {
   padding: 0.2em 0;
   text-align: right;
+  position: relative;
+}
+footer .footer__content-nav p .footer-a {
+  text-decoration: none;
+}
+footer .footer__content-nav p .footer-a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 60%;
+  width: 100%;
+  height: 2px;
+  background-color: hsl(0, 0%, 98%);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+footer .footer__content-nav p .footer-a:hover::after {
+  transform: scaleX(1);
 }
 footer .footer__copysocial {
   padding-top: 2em;
@@ -357,7 +377,7 @@ footer .footer__copysocial .footer__copy {
 }
 footer .footer__copysocial .footer__copy p, footer .footer__copysocial .footer__copy a {
   text-align: right;
-  font-size: clamp(1em, 0.9em + 1.1vw, 1.3rem);
+  font-size: clamp(1em, 0.9em + 1.1vw, 1.1rem);
   font-weight: 500;
   color: hsl(0, 0%, 98%);
 }
@@ -373,23 +393,28 @@ footer .footer__copysocial .footer__copy a:hover {
   color: hsl(146, 97%, 23%);
   transition: all 0.2s;
 }
-footer .footer__copysocial .footer-social {
+footer .footer__copysocial .footer__copy .footer-social {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-footer .footer__copysocial .footer-social i {
-  font-size: clamp(1em, 0.9em + 1.1vw, 1.3rem);
+footer .footer__copysocial .footer__copy .footer-social i {
+  padding-left: 0.5em;
+  font-size: clamp(1em, 1em + 1.5vw, 1.8rem);
   font-weight: 500;
   color: hsl(0, 0%, 98%);
 }
-footer .footer__copysocial .footer-social i::-moz-selection {
+footer .footer__copysocial .footer__copy .footer-social i::-moz-selection {
   background-color: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 15%);
 }
-footer .footer__copysocial .footer-social i::selection {
+footer .footer__copysocial .footer__copy .footer-social i::selection {
   background-color: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 15%);
+}
+footer .footer__copysocial .footer__copy .footer-social i:hover {
+  color: hsl(146, 97%, 23%);
+  transition: all 0.2s;
 }
 
 @media only screen and (max-width: 480px) {

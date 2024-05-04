@@ -58,22 +58,23 @@
 		</div>
 		<div class="footer__content-nav">
 			<h2>Navigacja</h2>
-			<p><a href="/{lang}/#aboutme" rel="internal" class:active={$page.url.pathname == '/'+lang+'/about'}>Krótko o mnie</a></p>
-			<p><a href="/{lang}/#skill" rel="internal" class:active={$page.url.pathname == '/'+lang+'/skill'}>Umiejętności</a></p>
-			<p><a href="/{lang}/#project" rel="internal" class:active={$page.url.pathname == '/'+lang+'/project'}>Projekty</a></p>
+			<p><a class="footer-a" href="/{lang}/#aboutme" rel="internal" class:active={$page.url.pathname == '/'+lang+'/about'}>Krótko o mnie</a></p>
+			<p><a class="footer-a" href="/{lang}/#skill" rel="internal" class:active={$page.url.pathname == '/'+lang+'/skill'}>Umiejętności</a></p>
+			<p><a class="footer-a" href="/{lang}/#project" rel="internal" class:active={$page.url.pathname == '/'+lang+'/project'}>Projekty</a></p>
 		</div>
 	</div>
 	<div class="footer__copysocial">
-		<h3>Socials</h3>
 		<div class="footer__copy">
-			<p>&copy; 2024 by Telmech Sp. z.o.o. Wszelkie prawa zastrzeżone &vert; Wykonanie <a target="_blank"
-			href="https://adrianna.mooo.com/" rel="noopener noreferrer">Adrianna Pawłowska</a></p>
+			<p>&copy; 2024 by Adrianna Pawłowska </p>
+
+			<p>Strona zaprojektowana i zakodowana z &#x2764;&#xFE0F;&#x200D;&#x1F525;</p>
 
 			<div class="footer-social">
-				<p><a target="_blank" aria-label="Anchor to transfer to the company Facebook page" href="https://www.facebook.com/TelmechSpolka" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a></p>
-				<p><a target="_blank" aria-label="Anchor to transfer to the company Linkedln page" href="/"><i class='bx bxl-linkedin-square' ></i></a></p>
-				<p><a target="_blank" aria-label="Anchor to transfer to the company Instagram page" href="https://www.instagram.com/telmechspolkazoo/" rel="noopener noreferrer"><i class='bx bxl-instagram-alt'></i></a></p>
-			</div>	
+				<p><a target="_blank" aria-label="Anchor to transfer to the company Facebook page" href="https://www.facebook.com/profile.php?id=100013368822697" rel="noopener noreferrer"><i class='bx bxl-facebook-square' ></i></a></p>
+				<p><a target="_blank" aria-label="Anchor to transfer to the company Linkedln page" href="https://www.linkedin.com/in/adrianna-paw%C5%82owska-a24850215/"><i class='bx bxl-linkedin-square' ></i></a></p>
+				<p><a target="_blank" aria-label="Anchor to transfer to the company Instagram page" href="https://www.instagram.com/zielona_laska/" rel="noopener noreferrer"><i class='bx bxl-instagram-alt'></i></a></p>
+				<p><a target="_blank" aria-label="Anchor to transfer to the company Github page" href="https://github.com/blackglasses4/mywebsite" rel="noopener noreferrer"><i class='bx bxl-github' ></i></a></p>
+			</div>
 		</div>
 	</div>
 </footer>
