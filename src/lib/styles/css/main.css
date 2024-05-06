@@ -531,7 +531,7 @@ footer .footer__copysocial .footer-social i:hover {
 }
 .header__theme-switch:hover {
   transition: all 0.2s;
-  color: var(--lightgreen);
+  color: hsl(146, 97%, 23%);
 }
 .header__theme {
   display: flex;
@@ -557,7 +557,6 @@ footer .footer__copysocial .footer-social i:hover {
 .nav {
   display: block;
   width: 100%;
-  height: 100%;
   overflow: hidden;
   max-width: 0;
   transition: max-width 0.4s ease-in;
@@ -586,11 +585,11 @@ footer .footer__copysocial .footer-social i:hover {
   background-color: var(--color-bg-selection);
 }
 .nav__menu a:hover {
-  color: var(--lightgreen);
+  color: hsl(146, 97%, 23%);
   transition: all 0.2s;
 }
 .nav__menu a:active {
-  color: var(--lightgreen);
+  color: hsl(146, 97%, 23%);
 }
 .nav__icon {
   display: none;
@@ -686,48 +685,53 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   }
 }
 @media only screen and (max-width: 768px) {
-  .header {
-    z-index: 0;
-  }
   .nav {
+    background: linear-gradient(-135deg, rgb(2, 116, 51), rgb(14, 14, 14), rgb(33, 49, 64));
     width: 100%;
-    height: 92%;
+    height: 93dvh;
     z-index: 4;
-    background-color: var(--lightgreen);
-    top: 8%;
+    top: 3.2em;
     right: 0;
     position: absolute;
   }
-  .nav__menu {
+  .nav .nav__menu {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 90%;
-    overflow-y: auto;
-    padding: 0;
   }
-  .nav__menu li {
-    display: flex;
+  .nav .nav__menu li {
     width: 100%;
-    align-items: center;
-    justify-content: center;
     height: auto;
     text-align: center;
     padding-right: 0;
+    position: relative;
   }
-  .nav__menu li a {
+  .nav .nav__menu li .footer-a {
     display: block;
     padding: 1em;
-    color: var(--theme-dominant-light);
-    font-size: 2em;
+    color: hsl(0, 0%, 98%);
+    font-size: 1.5em;
     font-weight: 500;
-    width: 100%;
-    text-align: center;
+    text-decoration: none;
   }
-  .nav__menu li a:hover, .nav__menu li a:focus {
-    color: var(--lightgreen);
+  .nav .nav__menu li .footer-a::after {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    max-width: 60%;
+    width: 100%;
+    height: 2px;
+    right: 20%;
+    background-color: hsl(0, 0%, 98%);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+  }
+  .nav .nav__menu li .footer-a:hover::after {
+    transform: scaleX(1);
   }
   .nav__icon {
     display: flex;
@@ -736,11 +740,11 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
     margin-top: auto;
   }
   .nav__icon p {
-    margin: 1em;
+    margin: 0 1.5em;
   }
   .nav__icon p a {
-    color: #fff;
-    font-size: 1.125em;
+    color: hsl(0, 0%, 98%);
+    font-size: 2em;
   }
 }
 :root {
