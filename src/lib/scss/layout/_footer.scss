@@ -6,7 +6,7 @@ footer {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-style: solid;
-    border-width: 2px 0;
+    border-width: 2px 0 0 0;
     border-image: linear-gradient(-135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)) 1 stretch;
     border-image-slice: 1;
     padding: 3em 2.5em 0em 2.5em;
@@ -92,6 +92,10 @@ footer {
 
     .footer__copysocial {
         padding-top: 2em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
         h3 {
             text-align: right;
@@ -101,34 +105,27 @@ footer {
             @include selection-light;
         }
 
-        .footer__copy {
-            display: flex;
-            justify-content: space-between;
+        p {
+            font-size: clamp(1em, 0.9em + 1.1vw, 1.1rem);
+            font-weight: 500;
+            color: $white;
+            @include selection-light;
+        }
 
-            .footer-copy {
-                p {
-                    font-size: clamp(1em, 0.9em + 1.1vw, 1.1rem);
-                    font-weight: 500;
-                    color: $white;
-                    @include selection-light;
-                }
-            }
+        .footer-social {
+            @include flex-center(space-between);
+            flex-wrap: wrap;
+            
+            i{
+                padding-left: 0.5em;
+                font-size: clamp(1em, 1em + 1.5vw, 1.8rem);
+                font-weight: 500;
+                color: $white;
+                @include selection-light;
 
-            .footer-social {
-                @include flex-center(space-between);
-                flex-wrap: wrap;
-                
-                i{
-                    padding-left: 0.5em;
-                    font-size: clamp(1em, 1em + 1.5vw, 1.8rem);
-                    font-weight: 500;
-                    color: $white;
-                    @include selection-light;
-
-                    &:hover {
-                        color: $lightgreen;
-                        @include transition;
-                    }
+                &:hover {
+                    color: $lightgreen;
+                    @include transition;
                 }
             }
         }
@@ -175,40 +172,13 @@ footer {
                 }
             }
         }
-    }
 
-    .footer__copy {
-        display: flex;
+        .footer__copysocial {
 
-        .footer-copy {
-            flex-direction: column;
+            .footer-social {
+                i{
 
-            p {
-                font-size: clamp(1em, 0.9em + 1.1vw, 1.1rem);
-                font-weight: 500;
-                color: $white;
-                @include selection-light;
-            }
-        }
-
-        .footer-social {
-            flex-direction: column;
-    
-            p {
-                display: flex; /* Display links inline */
-                margin-left: 1em; /* Add some space between links */
-            }
-
-            i{
-                padding-left: 0.5em;
-                font-size: clamp(1em, 1em + 1.5vw, 1.8rem);
-                font-weight: 500;
-                color: $white;
-                @include selection-light;
-    
-                &:hover {
-                    color: $lightgreen;
-                    @include transition;
+                    padding: 0.5em 1em 0em 0;
                 }
             }
         }
