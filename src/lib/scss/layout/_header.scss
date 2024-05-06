@@ -5,6 +5,7 @@
     padding: .5em;
     width: 100%;
     flex-wrap: wrap;
+    animation: fade-down 0.5s;
 
     // ::before {
     //     filter: url(#grainy);
@@ -142,6 +143,8 @@ input.side-menu {
 .langSwitch {
     @include selection-dark;
 }
+
+@include keyframes-fade-down;
 
 @media only screen and (min-width: #{map-get($breakpoints, 'tablet')}) {  
     .nav{

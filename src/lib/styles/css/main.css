@@ -48,6 +48,17 @@
   --darkgreen: hsl(144, 96%, 10%);
 }
 
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
 :root {
   --white: hsl(0, 0%, 98%);
   --darknight: hsl(0, 0%, 5%);
@@ -376,23 +387,18 @@ footer .footer__copysocial .footer__copy {
   display: flex;
   justify-content: space-between;
 }
-footer .footer__copysocial .footer__copy p, footer .footer__copysocial .footer__copy a {
-  text-align: right;
+footer .footer__copysocial .footer__copy .footer-copy p {
   font-size: clamp(1em, 0.9em + 1.1vw, 1.1rem);
   font-weight: 500;
   color: hsl(0, 0%, 98%);
 }
-footer .footer__copysocial .footer__copy p::-moz-selection, footer .footer__copysocial .footer__copy a::-moz-selection {
+footer .footer__copysocial .footer__copy .footer-copy p::-moz-selection {
   background-color: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 15%);
 }
-footer .footer__copysocial .footer__copy p::selection, footer .footer__copysocial .footer__copy a::selection {
+footer .footer__copysocial .footer__copy .footer-copy p::selection {
   background-color: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 15%);
-}
-footer .footer__copysocial .footer__copy a:hover {
-  color: hsl(146, 97%, 23%);
-  transition: all 0.2s;
 }
 footer .footer__copysocial .footer__copy .footer-social {
   display: flex;
@@ -454,31 +460,49 @@ footer .footer__copysocial .footer__copy .footer-social i:hover {
     width: 100%;
     transform-origin: left;
   }
-  .footer-social {
-    display: block;
+  .footer__copy {
+    display: flex;
   }
-  .footer-social i {
+  .footer__copy .footer-copy {
+    flex-direction: column;
+  }
+  .footer__copy .footer-copy p {
+    font-size: clamp(1em, 0.9em + 1.1vw, 1.1rem);
+    font-weight: 500;
+    color: hsl(0, 0%, 98%);
+  }
+  .footer__copy .footer-copy p::-moz-selection {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 15%);
+  }
+  .footer__copy .footer-copy p::selection {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 15%);
+  }
+  .footer__copy .footer-social {
+    flex-direction: column;
+  }
+  .footer__copy .footer-social p {
+    display: flex; /* Display links inline */
+    margin-left: 1em; /* Add some space between links */
+  }
+  .footer__copy .footer-social i {
     padding-left: 0.5em;
     font-size: clamp(1em, 1em + 1.5vw, 1.8rem);
     font-weight: 500;
     color: hsl(0, 0%, 98%);
   }
-  .footer-social i::-moz-selection {
+  .footer__copy .footer-social i::-moz-selection {
     background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 15%);
   }
-  .footer-social i::selection {
+  .footer__copy .footer-social i::selection {
     background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 15%);
   }
-  .footer-social i:hover {
+  .footer__copy .footer-social i:hover {
     color: hsl(146, 97%, 23%);
     transition: all 0.2s;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .section__skill {
-    padding: 5em 1em;
   }
 }
 :root {
@@ -536,6 +560,7 @@ footer .footer__copysocial .footer__copy .footer-social i:hover {
   padding: 0.5em;
   width: 100%;
   flex-wrap: wrap;
+  animation: fade-down 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -672,6 +697,16 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   background-color: var(--color-bg-selection);
 }
 
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
 @media only screen and (min-width: 768px) {
   .nav {
     max-width: none;
@@ -749,6 +784,56 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
     font-size: 1.125em;
   }
 }
+:root {
+  --white: hsl(0, 0%, 98%);
+  --darknight: hsl(0, 0%, 5%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
+  --fiolet: hsl(251, 57%, 45%);
+  --grey: hsl(0, 0%, 15%);
+  --font: Raleway, sans-serif;
+  --font-additional: Open Sans, sans-serif;
+}
+
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  --theme-dominant-light: hsl(0, 0%, 100%);
+  --theme-dominant-dark: hsl(0, 0%, 5%);
+  --color-font: hsl(0, 0%, 15%);
+  --color-bg-selection: hsl(0, 0%, 15%);
+  --color-selection: hsl(0, 0%, 98%);
+  --color-font-grey: hsl(0, 0%, 21%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --theme-dominant-light: hsl(0, 0%, 5%);
+    --theme-dominant-dark: hsl(0, 0%, 100%);
+    --color-font: hsl(0, 0%, 98%);
+    --color-bg-selection: hsl(0, 0%, 98%);
+    --color-selection: hsl(0, 0%, 15%);
+    --color-font-grey: hsl(0, 0%, 80%);
+    --darkgrey: hsl(0, 0%, 13%);
+    --lightgreen: hsl(146, 97%, 23%);
+    --darkgreen: hsl(144, 96%, 10%);
+  }
+}
+[data-theme=dark] {
+  --theme-dominant-light: hsl(0, 0%, 5%);
+  --theme-dominant-dark: hsl(0, 0%, 100%);
+  --color-font: hsl(0, 0%, 98%);
+  --color-bg-selection: hsl(0, 0%, 98%);
+  --color-selection: hsl(0, 0%, 15%);
+  --color-font-grey: hsl(0, 0%, 80%);
+  --darkgrey: hsl(0, 0%, 13%);
+  --lightgreen: hsl(146, 97%, 23%);
+  --darkgreen: hsl(144, 96%, 10%);
+}
+
 .section__welcome {
   position: relative;
   z-index: -1;
@@ -756,6 +841,7 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade-up 0.5s;
 }
 .section__welcome-content {
   text-align: center;
@@ -775,7 +861,7 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
 }
 .section__welcome-content h1 {
   font-size: clamp(0.9rem, 0.9rem + 5vw, 11rem);
-  color: var(--theme-dominant-dark);
+  color: var(--color-font);
 }
 .section__welcome-content h1::-moz-selection {
   color: var(--color-selection);
@@ -786,7 +872,7 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   background-color: var(--color-bg-selection);
 }
 .section__welcome-content h1 .h1_green {
-  color: var(--lightgreen);
+  color: hsl(146, 97%, 23%);
 }
 .section__welcome-content h1 .h1_green::-moz-selection {
   color: var(--color-selection);
@@ -797,6 +883,16 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   background-color: var(--color-bg-selection);
 }
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
 @media only screen and (max-width: 480px) {
   .section__welcome {
     height: 55svh;
@@ -856,6 +952,8 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   height: auto;
 }
 .section__aboutme-areas {
+  position: relative;
+  z-index: 0;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas: "one" "two";
@@ -913,6 +1011,13 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  animation: fade-up 0.5s;
+}
+
+.ab-two {
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
 }
 
 @media only screen and (min-width: 1430px) {
@@ -939,6 +1044,16 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   .section__aboutme-area .aboutme-img {
     width: 800px;
     max-width: 100%;
+  }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1011,10 +1126,15 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
   border-image-slice: 1;
   padding: 5em 2.5em;
 }
+.section__skill-content {
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
 .section__skill-content h1 {
   font-size: clamp(1rem, 1rem + 5vw, 5rem);
   font-weight: 500;
-  color: var(--white);
+  color: hsl(0, 0%, 98%);
   padding-bottom: 0.5em;
 }
 .section__skill-content h1::-moz-selection {
@@ -1027,7 +1147,7 @@ input.side-menu:checked ~ .hamb .hamb__line::after {
 }
 .section__skill-content p {
   font-size: clamp(1em, 0.9em + 1.1vw, 1.5rem);
-  color: var(--white);
+  color: hsl(0, 0%, 98%);
   padding: 0 0em 0.5em 0;
 }
 .section__skill-content p::-moz-selection {

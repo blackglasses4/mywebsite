@@ -105,17 +105,13 @@ footer {
             display: flex;
             justify-content: space-between;
 
-            p, a {
-                text-align: right;
-                font-size: clamp(1em, 0.9em + 1.1vw, 1.1rem);
-                font-weight: 500;
-                color: $white;
-                @include selection-light;
-            }
-
-            a:hover {
-                color: $lightgreen;
-                @include transition;
+            .footer-copy {
+                p {
+                    font-size: clamp(1em, 0.9em + 1.1vw, 1.1rem);
+                    font-weight: 500;
+                    color: $white;
+                    @include selection-light;
+                }
             }
 
             .footer-social {
@@ -181,26 +177,40 @@ footer {
         }
     }
 
-    .footer-social {
-        display: block;
+    .footer__copy {
+        display: flex;
 
-        i{
-            padding-left: 0.5em;
-            font-size: clamp(1em, 1em + 1.5vw, 1.8rem);
-            font-weight: 500;
-            color: $white;
-            @include selection-light;
+        .footer-copy {
+            flex-direction: column;
 
-            &:hover {
-                color: $lightgreen;
-                @include transition;
+            p {
+                font-size: clamp(1em, 0.9em + 1.1vw, 1.1rem);
+                font-weight: 500;
+                color: $white;
+                @include selection-light;
             }
         }
-    }
-}
 
-@media only screen and (max-width: #{map-get($breakpoints, 'phone-wide')}) {
-    .section__skill {
-        padding: 5em 1em;
+        .footer-social {
+            flex-direction: column;
+    
+            p {
+                display: flex; /* Display links inline */
+                margin-left: 1em; /* Add some space between links */
+            }
+
+            i{
+                padding-left: 0.5em;
+                font-size: clamp(1em, 1em + 1.5vw, 1.8rem);
+                font-weight: 500;
+                color: $white;
+                @include selection-light;
+    
+                &:hover {
+                    color: $lightgreen;
+                    @include transition;
+                }
+            }
+        }
     }
 }
