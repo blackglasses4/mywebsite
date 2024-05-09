@@ -2,8 +2,9 @@
     import Img from '@zerodevx/svelte-img'
     import { onMount } from 'svelte';
     // import InfinitiveLogos from '$lib/components/InfinitiveLogos.svelte';
-    import aboutme from '$lib/assets/aboutme.jpg?as=run'
-    import svelte from '$lib/assets/svelte.png?as=run'
+    import aboutme from '$lib/assets/about_me.jpg?as=run'
+    import telmech from '$lib/assets/telmech.png?as=run'
+    import mywebsite from '$lib/assets/my_website.png?as=run'
     // import homeBanerTwo from '$lib/assets/main-baner-1.jpg?as=run'
     // import certyfikat from '$lib/assets/certyfikat.jpg?as=run'
 
@@ -22,7 +23,7 @@
 <section id="aboutme" class="section__aboutme">
     <div class="section__aboutme-areas">
         <div class="section__aboutme-area ab-one">
-            <Img class="aboutme-img" src={aboutme} alt="Zdjęcie przedstawiające mnie" />
+            <Img class="aboutme-img" src={aboutme} alt="The photo of me" />
         </div>
         <div class="section__aboutme-area ab-two">
             <h1>I am a self-taught and a student involved in <strong>3D graphics design</strong>
@@ -69,7 +70,8 @@
                 </div>
             </div>
             <div class="projects__img">
-                <Img class="project-img" src={aboutme} alt="Zdjęcie przedstawiające mnie" />
+                <Img class="project-img" src={telmech} alt="Mockup, created from Canva,
+                showing a laptop and phone with the Telmech website" />
             </div>
         </div>
 
@@ -100,7 +102,8 @@
                 </div>
             </div>
             <div class="projects__img">
-                <Img class="project-img" src={aboutme} alt="Zdjęcie przedstawiające mnie" />
+                <Img class="project-img" src={mywebsite} alt="Mockup, created from Canva,
+                showing a laptop and phone with my website" />
             </div>
         </div>
     </div>

@@ -2,8 +2,10 @@
     import Img from '@zerodevx/svelte-img'
     import { onMount } from 'svelte';
     // import InfinitiveLogos from '$lib/components/InfinitiveLogos.svelte';
-    import aboutme from '$lib/assets/aboutme.jpg?as=run'
-    import svelte from '$lib/assets/svelte.png?as=run'
+    import aboutme from '$lib/assets/about_me.jpg?as=run'
+    import telmech from '$lib/assets/telmech.png?as=run'
+    import mywebsite from '$lib/assets/my_website.png?as=run'
+    // import svelte from '$lib/assets/svelte.png?as=run'
     // import homeBanerTwo from '$lib/assets/main-baner-1.jpg?as=run'
     // import certyfikat from '$lib/assets/certyfikat.jpg?as=run'
 
@@ -68,7 +70,8 @@
                 </div>
             </div>
             <div class="projects__img">
-                <Img class="project-img" src={aboutme} alt="Zdjęcie przedstawiające mnie" />
+                <Img class="project-img" src={telmech} alt="Mockup, stworzony ze strony Canva,
+                przedstawiający laptop i telefon ze stroną Telmech" />
             </div>
         </div>
 
@@ -99,7 +102,8 @@
                 </div>
             </div>
             <div class="projects__img">
-                <Img class="project-img" src={aboutme} alt="Zdjęcie przedstawiające mnie" />
+                <Img class="project-img" src={mywebsite} alt="Mockup, stworzony ze strony Canva,
+                przedstawiający laptop i telefon z moją stroną" />
             </div>
         </div>
     </div>
