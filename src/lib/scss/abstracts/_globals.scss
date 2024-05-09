@@ -84,3 +84,23 @@ body {
     }
 }
 
+.section_preloader {
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    text-align: center;
+
+    &-p {
+        color: $white;
+        font-size: 1.5em;
+    }
+
+    &-language {
+        display: flex;
+        justify-content: center;
+
+        p a {
+            color: $white;
+        }
+    }
+}
