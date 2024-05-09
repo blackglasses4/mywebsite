@@ -109,3 +109,7 @@
     </div>
 </section>
 
+<!-- back to top -->
+<a href="#header" class="back-to-top">
+    <i class='bx bx-up-arrow-alt'></i>
+</a>

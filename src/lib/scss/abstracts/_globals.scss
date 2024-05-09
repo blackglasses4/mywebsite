@@ -11,7 +11,7 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     line-height: 1.5;
-    font-family: v.$font;
+    font-family: $font;
     text-decoration: none;
     list-style-type: none;
     text-rendering: optimizeLegibility;
@@ -54,3 +54,33 @@ body {
         height: 100%;
     }
 }
+
+.back-to-top {
+    z-index: 3;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $lightgreen;
+    border-radius: 1em;
+    padding: 0.5em;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+
+    i {
+        transition: 0.3s ease-out;
+        color: $white;
+        font-size: 3rem;    
+    }
+
+    &:hover {
+        background-color: $light-two-green;
+
+        i {
+            transform: translateY(-4px);
+        }
+    }
+}
+

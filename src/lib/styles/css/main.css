@@ -211,6 +211,32 @@ body::before {
   height: 100%;
 }
 
+.back-to-top {
+  z-index: 3;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(146, 97%, 23%);
+  border-radius: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+}
+.back-to-top i {
+  transition: 0.3s ease-out;
+  color: hsl(0, 0%, 98%);
+  font-size: 3rem;
+}
+.back-to-top:hover {
+  background-color: hsl(146, 98%, 19%);
+}
+.back-to-top:hover i {
+  transform: translateY(-4px);
+}
+
 :root {
   --white: hsl(0, 0%, 98%);
   --darknight: hsl(0, 0%, 5%);

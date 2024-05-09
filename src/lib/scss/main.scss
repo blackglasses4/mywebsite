@@ -3,7 +3,6 @@
 @use './abstracts/variables' as v;
 //abstract
 @import 
-'abstracts/functions',
 'abstracts/mixins',
 'abstracts/variables',
 'abstracts/globals';
@@ -17,10 +16,8 @@
 
 //pages
 @import
-'pages/home',
 'pages/welcome',
 'pages/aboutme',
 'pages/skill',
 'pages/project';
-
  
