@@ -91,7 +91,7 @@ body {
     text-align: center;
 
     &-p {
-        color: $white;
+        color: var(--theme-dominant-dark);
         font-size: 1.5em;
     }
 
@@ -100,7 +100,7 @@ body {
         justify-content: center;
 
         p a {
-            color: $white;
+            color: var(--theme-dominant-dark);
         }
     }
 }
