@@ -6,7 +6,7 @@
 
     import { navigateToPreferredLanguageVersion } from '$lib/i18n/utils';
     
-    //navigateToPreferredLanguageVersion();
+    navigateToPreferredLanguageVersion();
 </script>
 
 <header id="header">
